@@ -1,8 +1,23 @@
-import Home from "./pages/Home"
+import {
+  Route,
+  createBrowserRouter,
+  createRoutesFromElements,
+  RouterProvider
+} from 'react-router-dom'
+
+import Home from './pages/Home'
+import Error from './pages/Error'
+
+const router = createBrowserRouter(
+  createRoutesFromElements(
+    <Route path="/">
+      <Route index element={<Home />} />
+
+      <Route path="*" element={<Error />} />
+    </Route>
+  )
+)
 
 export default function App() {
-
-  return (
-    <Home />
-  )
+  return <RouterProvider router={router} />
 }
