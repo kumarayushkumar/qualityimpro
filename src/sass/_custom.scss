@@ -1,0 +1,16 @@
+* {
+  margin: 0;
+}
+
+@font-face {
+  font-family: "FastHand";
+  src: url("../assets/fonts/Fasthand-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Body";
+  src: url("../assets/fonts/Domine-VariableFont_wght.ttf") format("truetype");
+}
+
+
+@import '../../node_modules/sassay/scss/sassay.base.scss';
