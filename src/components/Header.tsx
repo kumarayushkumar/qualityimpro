@@ -1,6 +1,8 @@
 import search from '../assets/svg/search.svg'
 import logo from '../assets/svg/qnilogo.svg'
 import contact from '../assets/svg/contact.svg'
+import Button from './Button'
+
 export default function Header() {
   return (
     // <div>
@@ -28,6 +30,7 @@ export default function Header() {
           </li>
           <li className="nav__link">
             <button className="btn nav__button">Book a demo</button>
+            <Button>Book a Demo</Button>
           </li>
         </ul>
       </nav>
