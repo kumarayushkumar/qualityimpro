@@ -1,8 +1,7 @@
 export interface IForm {
-  fname: string
-  lname: string
+  firstName: string
+  lastName: string
   email: string
   company: string
-  phone: string
+  phone: number
 }
-
