@@ -10,11 +10,13 @@ const schema = z.object({
   firstName: z
     .string()
     .min(3, { message: 'First name must be at least 3 characters.' })
-    .max(20, { message: 'First name must be less than 20 characters.' }).regex(/^[a-zA-Z]+$/, "First name can't contain numbers."),
+    .max(20, { message: 'First name must be less than 20 characters.' })
+    .regex(/^[a-zA-Z]+$/, "First name can't contain numbers."),
   lastName: z
     .string()
     .min(3, { message: 'Last name must be at least 3 characters.' })
-    .max(20, { message: 'Last name must be less than 20 characters.' }).regex(/^[a-zA-Z]+$/, "Last name can't contain numbers."),
+    .max(20, { message: 'Last name must be less than 20 characters.' })
+    .regex(/^[a-zA-Z]+$/, "Last name can't contain numbers."),
   email: z.string().email({ message: 'Please enter a valid email.' }),
   company: z.string().min(2, { message: 'Please enter a valid company.' }),
   phone: z
