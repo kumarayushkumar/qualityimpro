@@ -13,7 +13,7 @@ class FirestoreAPIError extends Error {
 const saveData = async (data: IForm): Promise<boolean> => {
   try {
     await addDoc(collection(db, 'details'), data)
-    return Promise.resolve(true)
+    return true
   } catch (error) {
     if (error instanceof FirestoreError) {
       throw new FirestoreAPIError(
@@ -21,7 +21,7 @@ const saveData = async (data: IForm): Promise<boolean> => {
         error.code
       )
     } else {
-      return Promise.reject(error)
+      return false
     }
   }
 }
