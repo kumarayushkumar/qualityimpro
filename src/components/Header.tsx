@@ -9,7 +9,7 @@ export default function Header() {
     <header className="header__container container">
       <div className="logo">
         <img src={logo} alt="Qni logo" />
-        <span className="companyName">Quality & improvisation</span>
+        <span className="companyName">Quality & Improvisation</span>
       </div>
       <nav className="header__nav">
         <ul className="nav__links">

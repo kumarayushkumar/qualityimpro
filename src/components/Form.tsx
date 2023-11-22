@@ -2,6 +2,7 @@ import { useForm } from 'react-hook-form'
 import { z } from 'zod'
 import { zodResolver } from '@hookform/resolvers/zod'
 import { DevTool } from '@hookform/devtools'
+import { Timestamp } from 'firebase/firestore'
 
 import { IForm } from '../interface'
 import { saveData } from '../firebase/firestore'
@@ -26,6 +27,7 @@ const schema = z.object({
 })
 
 const onSubmit = (data: IForm) => {
+  data.created_time = Timestamp.now();
   saveData(data)
     .then(() => {
       console.log('success')
@@ -109,7 +111,7 @@ export default function Form() {
           type="submit">
           Submit
         </button>
-        <button disabled className="" type="submit">
+        <button className="" type="submit">
           Submit
         </button>
       </form>
