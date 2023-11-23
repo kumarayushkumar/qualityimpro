@@ -4,8 +4,10 @@ import { zodResolver } from '@hookform/resolvers/zod'
 import { DevTool } from '@hookform/devtools'
 import { Timestamp } from 'firebase/firestore'
 
-import { IForm } from '../interface'
+import { Category, IForm } from '../interface'
 import { saveData } from '../firebase/firestore'
+
+const categoryValues = Object.values(Category) as [string, ...string[]]
 
 const schema = z.object({
   firstName: z
@@ -23,11 +25,14 @@ const schema = z.object({
   phone: z
     .number({ invalid_type_error: 'Please enter a valid phone number' })
     .min(1000000000, { message: 'Please enter a valid phone number' })
-    .max(9999999999, { message: 'Please enter a valid phone number' })
+    .max(9999999999, { message: 'Please enter a valid phone number' }),
+  category: z.enum(categoryValues, {
+    errorMap: () => ({ message: 'Please select a category.' })
+  })
 })
 
 const onSubmit = (data: IForm) => {
-  data.created_time = Timestamp.now();
+  data.created_time = Timestamp.now()
   saveData(data)
     .then(() => {
       console.log('success')
@@ -105,6 +110,18 @@ export default function Form() {
             autoComplete="tel-national"
           />
           {errors.phone && <p className="">{errors.phone.message}</p>}
+        </div>
+        <div>
+          <label htmlFor="category">Category</label>
+          <select {...register('category')} id="category" required>
+            <option value="">Select</option>
+            {Object.values(Category).map((category, index) => (
+              <option key={index} value={category}>
+                {category}
+              </option>
+            ))}
+          </select>
+          {errors.category && <p className="">{errors.category.message}</p>}
         </div>
         <button
           className="hide-arrow txt-white bg-black bdr-0 px-m py-s fs-xs fw-b"
