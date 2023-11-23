@@ -10,12 +10,12 @@ import { saveData } from '../firebase/firestore'
 const categoryValues = Object.values(Category) as [string, ...string[]]
 
 const schema = z.object({
-  firstName: z
+  firstname: z
     .string()
     .min(3, { message: 'First name must be at least 3 characters.' })
     .max(20, { message: 'First name must be less than 20 characters.' })
     .regex(/^[a-zA-Z]+$/, "First name can't contain numbers."),
-  lastName: z
+  lastname: z
     .string()
     .min(3, { message: 'Last name must be at least 3 characters.' })
     .max(20, { message: 'Last name must be less than 20 characters.' })
@@ -54,26 +54,26 @@ export default function Form() {
     <div>
       <form id="book-demo" onSubmit={handleSubmit(onSubmit)}>
         <div>
-          <label htmlFor="firstName">First Name</label>
+          <label htmlFor="firstname">First Name</label>
           <input
-            {...register('firstName')}
+            {...register('firstname')}
             type="text"
             id="firstName"
             required
             autoComplete="given-name"
           />
-          {errors.firstName && <p className="">{errors.firstName.message}</p>}
+          {errors.firstname && <p className="">{errors.firstname.message}</p>}
         </div>
         <div>
-          <label htmlFor="lastName">Last Name</label>
+          <label htmlFor="lastname">Last Name</label>
           <input
-            {...register('lastName')}
+            {...register('lastname')}
             type="text"
             id="lastName"
             required
             autoComplete="family-name"
           />
-          {errors.lastName && <p className="">{errors.lastName.message}</p>}
+          {errors.lastname && <p className="">{errors.lastname.message}</p>}
         </div>
         <div>
           <label htmlFor="email">Email</label>

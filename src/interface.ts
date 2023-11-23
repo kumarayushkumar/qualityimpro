@@ -10,8 +10,8 @@ export enum Category {
 }
 
 export interface IForm {
-  firstName: string
-  lastName: string
+  firstname: string
+  lastname: string
   email: string
   company: string
   phone: number
