@@ -1,31 +1,12 @@
 @use 'custom' as *;
-
-// .btn {
-//   // background-color: #000;
-//   // color: $white;
-//   // padding: 10px;
-//   // border-radius: 5px;
-//   // border: none;
-
-//   // font-size: 1rem;
-//   // font-weight: 700;
-
-//   transition: all 0.3s ease-in-out;
-//   &:hover {
-//     background-color: $white;
-//     color: #000;
-//   }
-// }
-
 // Button
 .btn {
   // Common styles for all buttons
   cursor: pointer;
-  cursor: pointer;
-  @extend .bdr-rd-xs;
+  @extend .bdr-rd-s;
+  border: none;
   font-weight: bold;
   text-transform: uppercase;
-
   &.primary {
     @extend .bg-pri;
     color: $white;
@@ -56,6 +37,12 @@
   &.large {
     @extend .py-m;
     @extend .px-l;
+    @extend .fs-l;
+  }
+
+  &.xlarge {
+    @extend .py-l;
+    @extend .px-xl;
     @extend .fs-l;
   }
 }

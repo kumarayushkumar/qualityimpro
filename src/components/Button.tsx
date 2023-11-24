@@ -1,7 +1,7 @@
 import { FC } from 'react'
 
 type ButtonStyle = 'primary' | 'secondary' | 'tertiary'
-type ButtonSize = 'small' | 'medium' | 'large'
+type ButtonSize = 'small' | 'medium' | 'large' | 'xlarge'
 
 export interface IButton {
   style?: ButtonStyle
@@ -18,7 +18,6 @@ const Button: FC<React.ButtonHTMLAttributes<HTMLButtonElement> & IButton> = ({
   ...props
 }) => {
   const classes = `btn ${style} ${size} ${className || ''}`
-
   return (
     <button className={classes.trim()} {...props}>
       {children}

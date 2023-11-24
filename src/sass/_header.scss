@@ -1,17 +1,26 @@
+@use 'custom' as *;
+
 .header__container {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0.8rem 0;
-  .logo {
+
+  .logo__link:link,
+  .logo__link:visited,
+  .logo__link:hover,
+  .logo__link:active {
+    color: $secondary;
+    cursor: pointer;
     display: flex;
     align-items: center;
     gap: 1rem;
-    .companyName {
+    .company-name {
       font-size: 1rem;
       font-weight: 600;
     }
   }
+
   .nav__links {
     text-transform: uppercase;
     display: flex;
@@ -20,14 +29,31 @@
     font-size: 0.9rem;
     font-weight: 500;
 
-    .nav__link {
+    .link {
       padding: 0.5rem;
+      cursor: pointer;
+      transition: all 0.3s ease;
       div {
         display: flex;
         align-items: center;
         justify-content: center;
         gap: 0.6rem;
       }
+    }
+
+    .nav__link:link,
+    .nav__link:visited {
+      padding: 1rem 0;
+      color: $secondary;
+    }
+    .nav__link:hover,
+    .nav__link:active {
+      color: $primary;
+      border-bottom: 2px solid $primary;
+    }
+    .nav__link.active {
+      color: $primary;
+      border-bottom: 2px solid $primary;
     }
   }
 }
