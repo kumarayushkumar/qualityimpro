@@ -57,6 +57,9 @@ export default function Header() {
           </li>
         </ul>
       </nav>
+      {/* <div className="search__input">
+        <input type="text" placeholder='search...'/>
+      </div> */}
     </header>
     // </div>
   )

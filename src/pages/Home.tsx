@@ -1,4 +1,4 @@
-import hero from '../assets/images/hero.jpg'
+import hero from '../assets/images/hero (1).jpg'
 import Button from '../components/Button'
 
 export default function Home() {
@@ -35,7 +35,7 @@ export default function Home() {
             </p>
           </div>
           <div className="customer__reviews">
-            
+
           </div>
         </div>
       </section>

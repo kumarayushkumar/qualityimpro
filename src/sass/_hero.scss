@@ -3,6 +3,7 @@
   position: relative;
   height: 90vh;
   background-color: $tertiary;
+  overflow: hidden;
   .hero__container {
     display: flex;
     justify-content: space-between;

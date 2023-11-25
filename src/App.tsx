@@ -13,17 +13,18 @@ import Pricing from './pages/Pricing'
 import About from './pages/About'
 import Layout from './Layout/Layout'
 import Customers from './pages/Customers'
+import Features from './pages/Features'
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<Layout />}>
       <Route index element={<Home />} />
-      <Route path="industries" element={<Industries />} />
-      <Route path="pricing" element={<Pricing />} />
-      <Route path="customers" element={<Customers />} />
-      <Route path="about" element={<About />} />
-      <Route path="book-demo" element={<BookDemo />} />
-
+        <Route path="features" element={<Features />} />
+        <Route path="industries" element={<Industries />} />
+        <Route path="pricing" element={<Pricing />} />
+        <Route path="customers" element={<Customers />} />
+        <Route path="about" element={<About />} />
+        <Route path="book-demo" element={<BookDemo />} />
       <Route path="*" element={<Error />} />
     </Route>
   )

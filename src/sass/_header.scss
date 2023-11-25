@@ -5,6 +5,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 0.8rem 0;
+  position: relative;
 
   .logo__link:link,
   .logo__link:visited,
@@ -28,11 +29,10 @@
     gap: 1.2rem;
     font-size: 0.9rem;
     font-weight: 500;
-
     .link {
+      transition: all 1s ease-in-out;
       padding: 0.5rem;
       cursor: pointer;
-      transition: all 0.3s ease;
       div {
         display: flex;
         align-items: center;
@@ -56,4 +56,23 @@
       border-bottom: 2px solid $primary;
     }
   }
+  // .search__input {
+  //   position: absolute;
+  //   display: flex;
+  //   align-items: center;
+  //   justify-content: center;
+  //   top: 4.8rem;
+  //   background-color: $primary-light;
+  //   z-index: 100;
+  //   width: 100%;
+  //   padding: 4rem;
+  //   input {
+  //     font-size: 1.6rem;
+  //     flex-grow:1;
+  //     padding: 0.8rem 1rem;
+  //     border: none;
+  //     border-radius: 100vh;
+
+  //   }
+  // }
 }
