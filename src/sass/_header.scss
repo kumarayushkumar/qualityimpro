@@ -1,6 +1,13 @@
 @use 'custom' as *;
-
+@import url('https://fonts.googleapis.com/css2?family=Marcellus&display=swap');
+.header {
+  background-color: $white;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
 .header__container {
+
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -16,12 +23,14 @@
     align-items: center;
     gap: 1rem;
     .company-name {
+      font-family: 'Marcellus', serif;
       font-size: 1rem;
       font-weight: 600;
+      letter-spacing: 0.7px;
     }
   }
 
-  .header__nav{
+  .header__nav {
     margin-left: 3rem;
     flex: 1;
   }
@@ -64,7 +73,6 @@
   border: none;
   background: none;
   cursor: pointer;
-
   display: none;
   .icon-mobile-nav {
     height: 2.8rem;
@@ -94,6 +102,7 @@
     opacity: 0;
     pointer-events: none;
     visibility: hidden;
+    margin-left: 0 !important;
   }
 
   .nav__links {
@@ -124,5 +133,4 @@
     display: block;
     z-index: 9999;
   }
-
 }

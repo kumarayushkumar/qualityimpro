@@ -8,21 +8,19 @@ export default function Home() {
   return (
     <main>
       <section className="hero__section">
-        <div className="hero__container container">
+        <div className="hero__container">
           <div className="hero__content d-f f-c gap-2">
-            <h1 className="hero__title fs-xxxl">
-              The <span>Quality</span> and <span>Improvisation</span> Platform
+            <h1 className="hero__title fs-xxl">
+              The <span className="fs-xxxl">Quality</span> and{' '}
+              <span className="fs-xxxl">Improvisation</span> Platform
             </h1>
             <p className="hero__description fs-xl fw-4">
               Q&I is a platform that helps you to improve the quality of your
               products and services.
             </p>
             <div className="hero__button d-f jc-space-between">
-              <Button size="xlarge" style="secondary">
+              <Button className="hover" size="xlarge" style="secondary">
                 Book a Demo
-              </Button>
-              <Button size="xlarge" style="primary">
-                Get Started
               </Button>
             </div>
           </div>

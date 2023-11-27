@@ -19,7 +19,7 @@
 
   &.tertiary {
     @extend .bg-ter;
-    color: $white;
+    color: $secondary;
   }
 
   &.small {
@@ -48,7 +48,7 @@
   transition: all 0.1s ease-in;
 }
 
-.btn:hover {
+.hover.btn:hover {
   box-shadow: 0 0 0 10px $tertiary-dark;
 }
 
@@ -106,8 +106,8 @@
 .get__started {
   background-image: linear-gradient(
       to right bottom,
-      rgba($primary-light, 0.5),
-      rgba($primary, 0.4)
+      rgba(0, 0, 0, 0.9),
+      rgba(0, 0, 0, 0.4)
     ),
     url('../assets/images/getstart.jpg');
   background-size: cover;
@@ -117,25 +117,26 @@
   align-items: center;
   justify-content: center;
 
-
-  &__content, &__content .top, .down{
+  &__content {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 1rem;
     font-size: 2rem;
-    h2 {
-      font-size: 3rem;
-      font-weight: 500;
-      letter-spacing: -1px;
-    }
-    p {
-      font-size: 1.6rem;
-      font-weight: 500;
+    color: $white;
+    .top {
+      h2 {
+        font-size: 3rem;
+        font-weight: 500;
+        letter-spacing: -1px;
+      }
+      p {
+        font-size: 1.6rem;
+        font-weight: 500;
+      }
     }
   }
 }
-
 
 .feature {
   gap: 2rem;
@@ -183,4 +184,3 @@
     }
   }
 }
-

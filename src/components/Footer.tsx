@@ -69,30 +69,30 @@ export default function Footer() {
                 +91 83187 83376
               </a>
             </div>
-            <div className="pt-xl">
+            <div className="social__button pt-xl">
               <a
-                className="txt-pri fs-xxl px-s"
+                className="txt-pri px-s"
                 href=""
                 target="_blank"
                 rel="noopener noreferrrer">
                 <FontAwesomeIcon className="" icon={faInstagram} />
               </a>
               <a
-                className="txt-pri fs-xxl px-s"
+                className="txt-pri px-s"
                 href=""
                 target="_blank"
                 rel="noopener noreferrrer">
                 <FontAwesomeIcon className="" icon={faFacebookF} />
               </a>
               <a
-                className="txt-pri fs-xxl px-s"
+                className="txt-pri px-s"
                 href=""
                 target="_blank"
                 rel="noopener noreferrrer">
                 <FontAwesomeIcon className="" icon={faLinkedinIn} />
               </a>
               <a
-                className="txt-pri fs-xxl px-s"
+                className="txt-pri px-s"
                 href="https://api.whatsapp.com/send/?phone=918318783376&text&app_absent=0"
                 target="_blank"
                 rel="noopener noreferrrer">

@@ -1,4 +1,15 @@
 @font-face {
+  font-family: 'Heading';
+  src: url('../assets/fonts/GT-Super-Display-Regular-Trial.otf')
+    format('truetype');
+}
+
+@font-face {
+  font-family: 'Lead';
+  src: url('../assets/fonts/Domine-VariableFont_wght.ttf') format('truetype');
+}
+
+@font-face {
   font-family: 'Body';
   src: url('../assets/fonts/OpenSans-VariableFont_wdth\,wght.ttf')
     format('truetype');
