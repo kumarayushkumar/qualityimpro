@@ -43,39 +43,49 @@
   &.xlarge {
     @extend .py-l;
     @extend .px-xl;
-    @extend .fs-l;
+    @extend .fs-xl;
   }
+  transition: all 0.1s ease-in;
+}
+
+.btn:hover {
+  box-shadow: 0 0 0 10px $tertiary-dark;
 }
 
 // Card
+
 .pricing__card {
   max-width: 20rem;
   display: flex;
   flex-direction: column;
   padding: 1.5rem;
   border-radius: 0.5rem;
-  box-shadow: 0 0 0 10px #fff, 0 0 10px rgba(0, 0, 0, 0.3);
-  background-color: $tertiary;
+  box-shadow: 0 0 0 10px $tertiary, 0 0 10px rgba(0, 0, 0, 0.3);
+  background-color: rgba($tertiary, 0.2);
   gap: 1.2rem;
+  transition: all 0.3s ease-in;
   &__content ul {
     display: flex;
     flex-direction: column;
-    gap: .5rem;
+    gap: 0.3rem;
     font-size: 1rem;
     padding-left: 1.2rem;
-    li {
+    li.present {
       list-style: url('../assets/svg/checkmark.svg');
+    }
+    li.not__present {
+      list-style: url('../assets/svg/cross.svg');
     }
     ::marker {
       font-size: 1.8rem;
     }
   }
 
-  &__heading{
-    font-size: 0.8rem;
+  &__header h1 {
+    font-size: 1rem;
   }
-  &__price{
-    font-size: 2.4rem;
+  &__price {
+    font-size: 2rem;
     font-weight: 600;
   }
 
@@ -83,7 +93,94 @@
     font-size: 0.8rem;
     color: $secondary;
   }
-  &__button Button{
+  &__button Button {
     width: 100%;
   }
 }
+
+.pricing__card:hover {
+  box-shadow: 0 0 0 10px $tertiary-dark;
+  transform: scale(1.02);
+}
+
+.get__started {
+  background-image: linear-gradient(
+      to right bottom,
+      rgba($primary-light, 0.5),
+      rgba($primary, 0.4)
+    ),
+    url('../assets/images/getstart.jpg');
+  background-size: cover;
+  height: 30rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+
+  &__content, &__content .top, .down{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    font-size: 2rem;
+    h2 {
+      font-size: 3rem;
+      font-weight: 500;
+      letter-spacing: -1px;
+    }
+    p {
+      font-size: 1.6rem;
+      font-weight: 500;
+    }
+  }
+}
+
+
+.feature {
+  gap: 2rem;
+  padding: 4.8rem 0;
+
+  &__header {
+    p {
+      margin-top: 0.5rem;
+      font-size: 3rem;
+    }
+  }
+
+  &__content {
+    .feature__list {
+      flex-wrap: wrap;
+      gap: 9.6rem;
+      .list__item--feature {
+        display: flex;
+        align-items: center;
+        gap: 3rem;
+        .list__desc {
+          h3 {
+            font-size: 1.8rem;
+            font-weight: 400;
+          }
+          p {
+            font-size: 1.2rem;
+            font-weight: 300;
+            color: $grey;
+          }
+        }
+        .list__image {
+          overflow: hidden;
+          border-radius: 1rem;
+          img {
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            width: 100%;
+            transition: all 0.3s ease-in;
+          }
+          img:hover {
+            transform: scale(1.03);
+          }
+        }
+      }
+    }
+  }
+}
+

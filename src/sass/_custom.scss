@@ -1,11 +1,16 @@
 $border-zero: false;
 $primary: #00bfb3;
+$primary-dark: #00867d;
 $secondary: #023436;
 $tertiary: #e6f9f7;
+$tertiary-dark: #cfe0de;
 $primary-light: #f4fffe;
-
+$grey: #334155;
 $base-size: 10px;
 $base-line-height: 1.5;
 $body-bg: #fff;
+$multi-l: 2.2;
+$multi-xl: 4.2;
+$font-multi-xxxl: 5;
 
 @import '../../node_modules/sassay/scss/sassay.base.scss';

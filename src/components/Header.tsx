@@ -1,12 +1,17 @@
 import { Link, NavLink } from 'react-router-dom'
-import contact from '../assets/svg/contact.svg'
+
+import cross from '../assets/svg/menux.svg'
+import menu from '../assets/svg/menu.svg'
 import logo from '../assets/svg/qnilogo.svg'
-import search from '../assets/svg/search.svg'
 import Button from './Button'
 
 export default function Header() {
+
+  const handleClick = () => {
+    const headerContainer = document.querySelector('.header__container')
+    headerContainer?.classList.toggle('nav-open')
+  }
   return (
-    // <div>
     <header className="header__container container">
       <Link to="/" className="logo__link">
         <img src={logo} alt="Qni logo" />
@@ -38,29 +43,27 @@ export default function Header() {
           </li>
           <li className="link">
             <NavLink className="nav__link" to="about">
-              About
+              About Us
             </NavLink>
           </li>
           <li className="link contact">
             <NavLink className="nav__link" to="contact">
-              <div>
-                <img src={contact} alt="" />
-                <span>Contact</span>
-              </div>
+              Contact
             </NavLink>
-          </li>
-          <li className="link search">
-            <img src={search} alt="" />
-          </li>
-          <li className="link">
-            <Button size="large">Book a Demo</Button>
           </li>
         </ul>
       </nav>
-      {/* <div className="search__input">
-        <input type="text" placeholder='search...'/>
-      </div> */}
+      <li className="link">
+        <Button size="large">Book a Demo</Button>
+      </li>
+      <div className="btn-mobile-nav" onClick={handleClick}>
+        <img className="icon-mobile-nav open" src={menu} alt="" />
+        <img
+          className="icon-mobile-nav close"
+          src={cross}
+          alt=""
+        />
+      </div>
     </header>
-    // </div>
   )
 }

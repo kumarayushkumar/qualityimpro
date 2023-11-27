@@ -6,8 +6,8 @@
 
 body {
   font-family: 'Body', sans-serif;
+  overflow-x: hidden;
 }
-
 /* Chrome, Safari, Edge, Opera */
 .no-spinners::-webkit-inner-spin-button,
 .no-spinners::-webkit-outer-spin-button {

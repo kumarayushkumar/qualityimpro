@@ -1,0 +1,10 @@
+.feature__hero {
+  height: 60vh;
+  overflow: hidden;
+  background-image: url('../assets/images/feature.jpg');
+  background-size: cover;
+  background-position: center;
+  .hero__img {
+    max-width: 100%;
+  }
+}
