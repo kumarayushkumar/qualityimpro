@@ -1,9 +1,9 @@
+import cost from '../assets/images/cost.jpg'
 import hygiene from '../assets/images/hygiene.jpg'
 import listing from '../assets/images/listing.jpg'
-import staff from '../assets/images/staff.jpg'
 import premises from '../assets/images/premises.jpg'
-import cost from '../assets/images/cost.jpg'
 import solution from '../assets/images/solution.jpg'
+import staff from '../assets/images/staff.jpg'
 
 const ListDesc = ({
   title,
@@ -20,12 +20,11 @@ const ListDesc = ({
   )
 }
 
-
 type FeatureProps = {
   children?: React.ReactNode
 }
 
-const Feature = ({children}: FeatureProps) => {
+const Feature = ({ children }: FeatureProps) => {
   return (
     <section className="feature container d-f f-c">
       {children}
@@ -34,9 +33,7 @@ const Feature = ({children}: FeatureProps) => {
           <li className="list__item--feature">
             <ListDesc
               title="Hygiene and Quality Audit with Solutions"
-              description="Ensure impeccable standards with our thorough Hygiene and
-                Quality audits, coupled with effective solutions for continuous
-                improvement."
+              description="Our dedicated inspector ensures top cleanliness and quality through comprehensive, periodic, and unannounced inspections covering personal grooming, premises hygiene, and food handling. Detailed reports will be promptly sent to the organization's owner or manager for thorough oversight."
             />
             <div className="list__image">
               <img src={hygiene} alt="" />
@@ -49,15 +46,14 @@ const Feature = ({children}: FeatureProps) => {
             </div>
             <ListDesc
               title="Free Listing on Q&I Portal"
-              description="Boost visibility and credibility by showcasing your commitment to quality on our portal, free of charge."
+              description="Elevate your brand presence on our website with a dedicated section highlighting quality and hygiene—a crucial consideration for customers who savor dining experiences. This strategic exposure positions your brand as a frontrunner in meeting contemporary expectations, capturing the attention of those who prioritize cleanliness and excellence in their dining choices."
             />
           </li>
 
           <li className="list__item--feature">
             <ListDesc
               title="Staff Training"
-              description="Elevate performance through specialized training programs,
-              equipping your team with the skills needed for excellence."
+              description="Dedicated team members undergo extensive training led by industry experts, gaining valuable skills in food services, proper food handling, and effective customer engagement. Our program goes beyond standard practices, including specialized modules for upselling strategies, elevating service quality. This holistic approach aims to enhance both service and revenue through effective upselling, positively impacting overall business performance."
             />
             <div className="list__image">
               <img src={staff} alt="" />
@@ -102,6 +98,5 @@ const Feature = ({children}: FeatureProps) => {
     </section>
   )
 }
-
 
 export default Feature

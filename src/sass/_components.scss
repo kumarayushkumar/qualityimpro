@@ -159,21 +159,26 @@
         gap: 3rem;
         .list__desc {
           h3 {
-            font-size: 1.8rem;
+            font-size: 2rem;
             font-weight: 400;
+            margin-bottom: 0.8rem;
           }
           p {
             font-size: 1.2rem;
             font-weight: 300;
+            max-width: 57rem;
             color: $grey;
           }
         }
         .list__image {
           overflow: hidden;
           border-radius: 1rem;
+          max-width: 28rem;
+          max-height: 17.5rem;
+          box-shadow: 0 0 0 10px $tertiary;
           img {
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
             width: 100%;
+            height: 100%;
             transition: all 0.3s ease-in;
           }
           img:hover {
