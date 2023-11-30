@@ -1,8 +1,8 @@
-import hero from '../assets/images/hero (1).jpg'
+import hero from '../assets/images/hero.jpg'
+import BeforeAfter from '../components/BeforeAfter'
 import Button from '../components/Button'
-import Feature from '../components/Feature'
 import GetStarted from '../components/GetStarted'
-
+import HomeFeatures from '../components/HomeFeatures'
 
 export default function Home() {
   return (
@@ -29,12 +29,8 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <Feature>
-        <div className="feature__header">
-          <h2 className="home__heading">Elevate with Excellence</h2>
-          <p>Our Distinctive Features</p>
-        </div>
-      </Feature>
+      <HomeFeatures />
+      <BeforeAfter />
       <GetStarted />
     </main>
   )

@@ -10,7 +10,7 @@ export default function Pricing() {
         </div>
         <div className="pricing__cards">
           <PricingCard
-            plan="Free Plan"
+            plan="Free Trial"
             price="0"
             featuresPresent={[
               'Hygiene and Quality inspection only',

@@ -1,0 +1,17 @@
+<svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 32 32"
+                  style="
+                        display: block;
+                        fill: none;
+                        height: 24px;
+                        width: 24px;
+                        stroke: #34d399;
+                        stroke-width: 5;
+                        stroke-linecap: round;
+                        overflow: visible;
+                      "
+                  role="img"
+                  focusable="false">
+                  <path fill="none" d="m4 16.5 8 8 16-16"></path>
+                </svg>

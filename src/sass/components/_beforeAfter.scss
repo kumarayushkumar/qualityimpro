@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Lora:wght@400;500;600&display=swap');
+.section__header {
+  h3 {
+    font-size: 1.8rem;
+    font-weight: 500;
+    letter-spacing: -1px;
+  }
+  p {
+    font-size: 3rem;
+    font-weight: 300;
+  }
+  margin-bottom: 4.8rem;
+}
+
+.before__after__card {
+  height: 30rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    color: #fff;
+    // font-size: 2rem;
+    .content__header {
+      font-size: 2rem;
+      font-weight: 600;
+      font-family: 'Heading', sans-serif;
+    }
+    ul {
+      font-family: 'Lora', sans-serif;
+      font-weight: 500;
+      font-size: 1.2rem;
+    }
+  }
+}
+.after {
+  // background-color: #dfeeff;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(#0c4a6e, 0.8),
+      rgba(#8b5cf6, 0.4)
+    ),
+  url('../assets/images/after.jpg');
+  background-size: cover;
+
+  background-position: center;
+  backdrop-filter: blur(10px);
+}
+.before {
+  // background-color: #ffe4e6;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(#701a75, 0.6),
+      rgba(#8b5cf6, 0.4)
+    ),url('../assets/images/before.jpg');
+  background-size: cover;
+  background-position: center;
+
+}
+
+
