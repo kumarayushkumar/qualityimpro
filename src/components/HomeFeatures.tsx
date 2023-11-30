@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import feature1 from '../assets/images/feature-1.jpg'
+import { Icon } from './ui/icon'
 
 export const Image: React.FC<{ path: string }> = ({ path }) => {
   return (
@@ -40,10 +41,11 @@ const FeatureContent = [
 const ListDesc: React.FC<{ title: string; description: string }> = ({ title, description }) => {
   return (
     <li>
-      <h4>{title}</h4>
-      <p>
-        {description}
-      </p>
+      <h4 style={{display: 'flex', gap: '0.4rem', alignItems: 'center'}}>
+          <Icon type={true} />
+        {title}
+      </h4>
+      <p>{description}</p>
     </li>
   )
 }
