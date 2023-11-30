@@ -17,7 +17,7 @@ const Button: FC<React.ButtonHTMLAttributes<HTMLButtonElement> & IButton> = ({
   className,
   ...props
 }) => {
-  const classes = `btn ${style} ${size} ${className || ''}`
+  const classes = `btn bdr-0 fw-b ${style} ${size} ${className || ''}`
   return (
     <button className={classes.trim()} {...props}>
       {children}
