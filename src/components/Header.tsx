@@ -47,11 +47,6 @@ export default function Header() {
                 About Us
               </NavLink>
             </li>
-            <li className="link contact">
-              <NavLink className="nav__link" to="contact">
-                Contact
-              </NavLink>
-            </li>
           </ul>
         </nav>
         <li className="link">

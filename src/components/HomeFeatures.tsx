@@ -1,14 +1,9 @@
 import { Link } from 'react-router-dom'
 import feature1 from '../assets/images/cost.jpg'
-import { Icon } from './ui/icon'
+import { Icon } from './ui/Icon'
+import { Image } from './ui/Image'
 
-export const Image: React.FC<{ path: string }> = ({ path }) => {
-  return (
-    <div className="image__container">
-      <img src={path} alt="" />
-    </div>
-  )
-}
+
 
 const FeatureContent = [
   {
