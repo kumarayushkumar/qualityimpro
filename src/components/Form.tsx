@@ -6,6 +6,8 @@ import { Timestamp } from 'firebase/firestore'
 
 import { Category, IForm } from '../interface'
 import { saveData } from '../firebase/firestore'
+import Button from './Button'
+import Input from './Input'
 
 const categoryValues = Object.values(Category) as [string, ...string[]]
 
@@ -52,10 +54,10 @@ export default function Form() {
 
   return (
     <div>
-      <form id="book-demo" onSubmit={handleSubmit(onSubmit)}>
-        <div>
+      <form id="book-demo" className="p-m" onSubmit={handleSubmit(onSubmit)}>
+        <div className="mt-l">
           <label htmlFor="firstname">First Name</label>
-          <input
+          <Input
             {...register('firstname')}
             type="text"
             id="firstName"
@@ -64,9 +66,9 @@ export default function Form() {
           />
           {errors.firstname && <p className="">{errors.firstname.message}</p>}
         </div>
-        <div>
+        <div className="mt-l">
           <label htmlFor="lastname">Last Name</label>
-          <input
+          <Input
             {...register('lastname')}
             type="text"
             id="lastName"
@@ -75,9 +77,9 @@ export default function Form() {
           />
           {errors.lastname && <p className="">{errors.lastname.message}</p>}
         </div>
-        <div>
+        <div className="mt-l">
           <label htmlFor="email">Email</label>
-          <input
+          <Input
             {...register('email')}
             type="email"
             id="email"
@@ -86,9 +88,9 @@ export default function Form() {
           />
           {errors.email && <p className="">{errors.email.message}</p>}
         </div>
-        <div>
+        <div className="mt-l">
           <label htmlFor="company">Company</label>
-          <input
+          <Input
             {...register('company')}
             type="text"
             id="company"
@@ -97,9 +99,9 @@ export default function Form() {
           />
           {errors.company && <p className="">{errors.company.message}</p>}
         </div>
-        <div>
+        <div className="mt-l">
           <label htmlFor="phone">Phone Number</label>
-          <input
+          <Input
             {...register('phone', { valueAsNumber: true })}
             className="no-spinners"
             type="number"
@@ -111,7 +113,7 @@ export default function Form() {
           />
           {errors.phone && <p className="">{errors.phone.message}</p>}
         </div>
-        <div>
+        <div className="mt-l">
           <label htmlFor="category">Category</label>
           <select {...register('category')} id="category" required>
             <option value="">Select</option>
@@ -123,14 +125,13 @@ export default function Form() {
           </select>
           {errors.category && <p className="">{errors.category.message}</p>}
         </div>
-        <button
-          className="hide-arrow txt-white bg-black bdr-0 px-m py-s fs-xs fw-b"
-          type="submit">
+        <Button
+          style={'secondary'}
+          size={'large'}
+          type="submit"
+          className="mt-xl mx-0 ta-c">
           Submit
-        </button>
-        <button className="" type="submit">
-          Submit
-        </button>
+        </Button>
       </form>
       <DevTool control={control} />
     </div>
