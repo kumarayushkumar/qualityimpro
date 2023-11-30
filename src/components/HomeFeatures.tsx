@@ -40,12 +40,14 @@ const FeatureContent = [
 
 const ListDesc: React.FC<{ title: string; description: string }> = ({ title, description }) => {
   return (
-    <li>
-      <h4 style={{display: 'flex', gap: '0.4rem', alignItems: 'center'}}>
-          <Icon type={true} />
-        {title}
-      </h4>
-      <p>{description}</p>
+    <li className='d-f gap-2 ai-center'>
+      <Icon type={true} />
+      <div>
+        <h4 style={{display: 'flex', gap: '0.4rem', alignItems: 'center'}}>
+          {title}
+        </h4>
+        <p>{description}</p>
+      </div>
     </li>
   )
 }
@@ -60,13 +62,6 @@ const HomeFeatures: React.FC<React.HTMLAttributes<HTMLDivElement>> = () => {
         </div>
         <div className="home__feature__content">
           <div>
-            <div className="content__header">
-              <h3>Why Do you need Q&I?</h3>
-              <p>
-                Elevate Your Operations with Quality and Hygiene Inspections
-                (Q&I)
-              </p>
-            </div>
             <div className="content__feature">
               <ul>
                 {
@@ -80,13 +75,18 @@ const HomeFeatures: React.FC<React.HTMLAttributes<HTMLDivElement>> = () => {
                   })
                 }
               </ul>
-              <div className="content_image">
-                <Image path={feature1} />
-                <Image path={feature1} />
-                <Image path={feature1} />
-                <Image path={feature1} />
-                <Image path={feature1} />
-                <Image path={feature1} />
+              <div className="content_imae d-f gap-2">
+                <div className='d-f gap-2 f-c jc-center'>
+                  <Image path={feature1} />
+                  <Image path={feature1} />
+                  <Image path={feature1} />
+                  <Image path={feature1} />
+                </div>
+                <div className='d-f gap-2 f-c jc-center'>
+                  <Image path={feature1} />
+                  <Image path={feature1} />
+                  <Image path={feature1} />
+                </div>
               </div>
             </div>
           </div>
