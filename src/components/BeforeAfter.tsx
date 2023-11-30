@@ -34,7 +34,7 @@ const BeforeAfterCard: React.FC<BeforeAfterCardProps> = ({
 
 export default function BeforeAfter() {
   return (
-    <section className="before__after my-xxl py-xl">
+    <section className="before__after__section my-xxl py-xl">
       <div className="container">
         <div className="section__header">
           <h3>Raising the Bar</h3>

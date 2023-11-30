@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import feature1 from '../assets/images/feature-1.jpg'
+import feature1 from '../assets/images/cost.jpg'
 import { Icon } from './ui/icon'
 
 export const Image: React.FC<{ path: string }> = ({ path }) => {
@@ -91,7 +91,7 @@ const HomeFeatures: React.FC<React.HTMLAttributes<HTMLDivElement>> = () => {
             </div>
           </div>
           <div className='read__more'>
-            <Link to='/feature'>
+            <Link to='/features'>
               Read More
             </Link>
           </div>

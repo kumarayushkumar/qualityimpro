@@ -1,5 +1,6 @@
 @use '../custom' as *;
 .home__feature {
+  padding: 4.8rem 0;
   &__content {
     display: flex;
     flex-direction: column;
@@ -26,6 +27,7 @@
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    gap: 3rem;
     ul {
       li {
         margin-bottom: 1rem;
@@ -82,5 +84,10 @@
     border: 2px solid $secondary;
     padding: 0.8rem 1.2rem;
     border-radius: 0.5rem;
+  }
+
+  a:hover {
+    background-color: $secondary;
+    color: $tertiary;
   }
 }
