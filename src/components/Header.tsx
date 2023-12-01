@@ -37,11 +37,11 @@ export default function Header() {
                 Pricing
               </NavLink>
             </li>
-            <li className="link">
+            {/* <li className="link">
               <NavLink className="nav__link" to="customers">
                 Customers
               </NavLink>
-            </li>
+            </li> */}
             <li className="link">
               <NavLink className="nav__link" to="about">
                 About Us

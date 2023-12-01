@@ -3,6 +3,7 @@ import BeforeAfter from '../components/BeforeAfter'
 import Button from '../components/Button'
 import GetStarted from '../components/GetStarted'
 import HomeFeatures from '../components/HomeFeatures'
+import { HomeIndustry } from '../components/HomeIndustry'
 
 export default function Home() {
   return (
@@ -30,6 +31,7 @@ export default function Home() {
         </div>
       </section>
       <HomeFeatures />
+      <HomeIndustry  />
       <BeforeAfter />
       <GetStarted />
     </main>

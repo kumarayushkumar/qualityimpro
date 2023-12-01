@@ -1,4 +1,5 @@
 import { Icon } from './ui/Icon'
+import { SectionHeader } from './ui/SectionHeader'
 
 interface BeforeAfterCardProps {
   points: string[]
@@ -34,12 +35,9 @@ const BeforeAfterCard: React.FC<BeforeAfterCardProps> = ({
 
 export default function BeforeAfter() {
   return (
-    <section className="before__after__section my-xxl py-xl">
+    <section className="before__after__section">
       <div className="container">
-        <div className="section__header">
-          <h3>Raising the Bar</h3>
-          <p>Our Hospitality Enhancement Solutions</p>
-        </div>
+        <SectionHeader title='Raising the Bar' description='Our Hospitality Enhancement Solutions'/>
         <div className="d-f jc-space-evenly">
           <BeforeAfterCard
             points={[

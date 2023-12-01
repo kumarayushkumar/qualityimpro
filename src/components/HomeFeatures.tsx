@@ -1,7 +1,14 @@
 import { Link } from 'react-router-dom'
-import feature1 from '../assets/images/cost.jpg'
+import cost from '../assets/images/cost.jpg'
+import feature1 from '../assets/images/feature-1.jpg'
+import feature2 from '../assets/images/feature-2.jpg'
+import feature3 from '../assets/images/feature-3.jpg'
+import feature4 from '../assets/images/feature-4.jpg'
+import feature5 from '../assets/images/feature-5.jpg'
+import feature6 from '../assets/images/feature-6.jpg'
 import { Icon } from './ui/Icon'
 import { Image } from './ui/Image'
+import { SectionHeader } from './ui/SectionHeader'
 
 
 
@@ -51,10 +58,7 @@ const HomeFeatures: React.FC<React.HTMLAttributes<HTMLDivElement>> = () => {
   return (
     <section className="home__feature my-xxl py-xl">
       <div className="container">
-        <div className="section__header">
-          <h3>Elevate with Excellence</h3>
-          <p>A Look into Our Key Features</p>
-        </div>
+        <SectionHeader title='Elevate with Excellence' description='A Look into Our Key Features' />
         <div className="home__feature__content">
           <div>
             <div className="content__feature">
@@ -70,17 +74,17 @@ const HomeFeatures: React.FC<React.HTMLAttributes<HTMLDivElement>> = () => {
                   })
                 }
               </ul>
-              <div className="content_imae d-f gap-2">
+              <div className="content_image d-f gap-2">
                 <div className='d-f gap-2 f-c jc-center'>
                   <Image path={feature1} />
-                  <Image path={feature1} />
-                  <Image path={feature1} />
-                  <Image path={feature1} />
+                  <Image path={feature2} />
+                  <Image path={feature3} />
+                  <Image path={feature4} />
                 </div>
                 <div className='d-f gap-2 f-c jc-center'>
-                  <Image path={feature1} />
-                  <Image path={feature1} />
-                  <Image path={feature1} />
+                  <Image path={feature5} />
+                  <Image path={feature6} />
+                  <Image path={cost} />
                 </div>
               </div>
             </div>

@@ -1,0 +1,39 @@
+@use 'custom' as *;
+.demo__section {
+  .demo__hero {
+    height: 60vh;
+    overflow: hidden;
+    background-image: url('../assets/images/demo.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+  .demo__container {
+    margin: 4.8rem 0;
+
+    .demo__content {
+      display: flex;
+      flex-direction: column;
+      gap: 3rem;
+      .demo__header {
+        display: flex;
+        flex-direction: column;
+        gap: 1.6rem;
+        .demo__title {
+          font-size: 3rem;
+          font-weight: 700;
+          color: $secondary;
+        }
+        .demo__description {
+          font-size: 1.4rem;
+          font-weight: 400;
+          color: $secondary;
+          max-width: 24rem;
+        }
+      }
+
+      button {
+        max-width: 10rem;
+      }
+    }
+  }
+}

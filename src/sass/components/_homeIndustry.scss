@@ -1,0 +1,9 @@
+@use '../custom' as *;
+.home__industry--content {
+  gap: 9.6rem;
+}
+
+.home__industry {
+  padding: 4.8rem 0;
+  background-color: $primary-light;
+}

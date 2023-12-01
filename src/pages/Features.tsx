@@ -1,15 +1,16 @@
 import Feature from '../components/Feature'
 import GetStarted from '../components/GetStarted'
+import { SectionHeader } from '../components/ui/SectionHeader'
 
 export default function Features() {
   return (
     <div>
       <div className="feature__hero"></div>
       <Feature>
-        <div className="feature__header">
-          <h2 className="home__heading">Elevate with Excellence</h2>
-          <p>A Look into Our Key Features</p>
-        </div>
+        <SectionHeader
+          title="Elevate with Excellence"
+          description="A Look into Our Key Features"
+        />
       </Feature>
       <GetStarted />
     </div>
