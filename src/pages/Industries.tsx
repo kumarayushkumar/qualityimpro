@@ -1,21 +1,21 @@
+import hotel from '../assets/images/hotel.jpg'
+import restaurant from '../assets/images/restaurant.jpg'
 import GetStarted from '../components/GetStarted'
 import { ListHomePage } from '../components/ui/ListHomePage'
 import { SectionHeader } from '../components/ui/SectionHeader'
-import restaurant from '../assets/images/restaurant.jpg'
-import hotel from '../assets/images/hotel.jpg'
 
 const IndustryData = () => {
   return (
     <div className="industry__list">
       <ListHomePage
-        title="Where Quality, Hygiene, and Efficiency Meet"
-        description="Maintaining top-notch hygiene and service is key for restaurant success. Balancing quality, hygiene, and cost ensures customer satisfaction and profitability"
+        title="Empowering Your Restaurant Team"
+        description="Indeed, in the budget hotel segment, hygiene and courteous staff play pivotal roles. Customers often prioritize cleanliness and good service even in more affordable accommodations for a positive experience"
         image={restaurant}
         className="industry__list--item"
       />
       <ListHomePage
-        title="Where Quality, Hygiene, and Efficiency Meet"
-        description="Maintaining top-notch hygiene and service is key for restaurant success. Balancing quality, hygiene, and cost ensures customer satisfaction and profitability"
+        title="Striking the Perfect Balance"
+        description="Absolutely, maintaining high standards of hygiene and service is crucial for a restaurant's success. Balancing quality, hygiene, and cost efficiency ensures customer satisfaction and profitability"
         image={hotel}
         className="industry__list--item"
         first
@@ -26,7 +26,7 @@ const IndustryData = () => {
 
 export default function Industries() {
   return (
-    <div className='industry__section'>
+    <div className="industry__section">
       <div className="industry__hero"></div>
       <div className="industry__content container">
         <SectionHeader
