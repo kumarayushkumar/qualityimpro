@@ -3,7 +3,8 @@ import notPresentIcon from '../../assets/svg/tableNotP.svg'
 
 const style = {
   width: '25px',
-  height: '25px'
+  height: '25px',
+  flexShrink: 0
 }
 
 export const Icon: React.FC<{ type: boolean }> = ({ type }) => {

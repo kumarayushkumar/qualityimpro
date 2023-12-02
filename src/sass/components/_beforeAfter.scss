@@ -30,27 +30,26 @@
   .before__after__card:hover {
     transform: scale(1.02);
   }
+
   .after {
     // background-color: #dfeeff;
     background-image: linear-gradient(
         to right bottom,
-        rgba(#0c4a6e, 0.8),
+        rgba(#093853, 0.8),
         rgba(#8b5cf6, 0.4)
       ),
-      url('../assets/images/after.jpg');
+      url('../assets/images/after-blur.jpg');
     background-size: cover;
-
     background-position: center;
-    backdrop-filter: blur(10px);
   }
   .before {
     // background-color: #ffe4e6;
     background-image: linear-gradient(
         to right bottom,
-        rgba(#701a75, 0.6),
+        rgba(#451048, 0.6),
         rgba(#8b5cf6, 0.4)
       ),
-      url('../assets/images/before.jpg');
+      url('../assets/images/before-blur.jpg');
     background-size: cover;
     background-position: center;
   }

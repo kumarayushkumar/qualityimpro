@@ -4,10 +4,10 @@
   flex-direction: column;
   gap: 4.8rem;
   &__hero {
-    height: 100vh;
     overflow: hidden;
     .hero__img {
       max-width: 100%;
+      max-height: 80%;
     }
   }
   .about__heading {

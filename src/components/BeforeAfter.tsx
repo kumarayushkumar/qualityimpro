@@ -38,7 +38,7 @@ export default function BeforeAfter() {
     <section className="before__after__section">
       <div className="container">
         <SectionHeader title='Raising the Bar' description='Our Hospitality Enhancement Solutions'/>
-        <div className="d-f jc-space-evenly">
+        <div className="before__after__card__container d-f jc-space-evenly">
           <BeforeAfterCard
             points={[
               'Subpar Customer Experience',

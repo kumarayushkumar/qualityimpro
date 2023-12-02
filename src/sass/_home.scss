@@ -1,23 +1,18 @@
 @use 'custom' as *;
 .hero__section {
-  position: relative;
-  height: 80vh;
+  padding: 9.6rem 0 9.6rem 0;
   background-color: $primary-light;
   overflow: hidden;
   .hero__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
     max-width: 80rem;
     margin: 0 auto;
-    padding: 0 2rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: relative;
-    gap: 2rem;
-    top: 50%;
-    transform: translateY(-50%);
+    padding: 0 2.4rem;
+    gap: 6rem;
 
     .hero__content {
-      width: 50%;
       display: flex;
       flex-direction: column;
       justify-content: start;
@@ -39,9 +34,9 @@
     }
 
     .hero__image {
-      width: 60%;
+      width: 100%;
       img {
-        box-shadow: 4px 0 50px rgba(0, 0, 0, 0.3);
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
         width: 100%;
       }
     }
@@ -51,4 +46,108 @@
 .home__heading {
   font-weight: 400;
   font-size: 1.4rem;
+}
+
+@media (max-width: 69em) {
+  html {
+    font-size: 80%;
+  }
+}
+
+@media (max-width: 56.25em) {
+  .before__after__card__container {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .before__after__card {
+    margin: auto 2rem;
+    // .before__after__card__content {
+    //   .content__header {
+    //     p {
+    //       font-size: 3rem;
+    //     }
+    //   }
+
+    //   .card__points {
+    //     font-size: 1.4rem;
+    //   }
+    // }
+  }
+}
+
+@media (max-width: 60em) {
+  .hero__section {
+    .hero__container {
+      display: grid;
+      grid-template-columns: 1fr;
+      align-items: center;
+      justify-content: center;
+
+      .hero__image {
+        margin: 0 auto;
+        width: 80%;
+      }
+
+      .hero__content {
+        text-align: center;
+        align-items: center;
+        gap: 1.2rem;
+      }
+    }
+  }
+
+  .home__feature {
+    .content__feature {
+      flex-direction: column !important;
+      gap: 2rem;
+
+      .content__image {
+        flex-direction: column !important;
+        div {
+          flex-direction: row !important;
+        }
+      }
+    }
+  }
+
+  .home__industry--content {
+    div:nth-child(odd) {
+      li {
+        flex-direction: column;
+      }
+    }
+    div:nth-child(even) {
+      li {
+        flex-direction: column-reverse;
+      }
+    }
+  }
+  .feature__list,
+  .industry__list {
+    li {
+      gap: 5rem;
+    }
+    li:nth-child(even) {
+      flex-direction: column;
+    }
+    li:nth-child(odd) {
+      flex-direction: column-reverse;
+    }
+  }
+  .pricing {
+    &__heading {
+      text-align: center;
+    }
+    .pricing__cards {
+      flex-direction: column;
+    }
+  }
+
+  .demo__container {
+    gap: 3rem;
+
+    .form__container {
+      width: 100%;
+    }
+  }
 }
