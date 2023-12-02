@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+
 import cost from '../assets/images/cost.jpg'
 import feature1 from '../assets/images/feature-1.jpg'
 import feature2 from '../assets/images/feature-2.jpg'
@@ -9,8 +10,6 @@ import feature6 from '../assets/images/feature-6.jpg'
 import { Icon } from './ui/Icon'
 import { Image } from './ui/Image'
 import { SectionHeader } from './ui/SectionHeader'
-
-
 
 const FeatureContent = [
   {
@@ -24,28 +23,35 @@ const FeatureContent = [
   },
   {
     heading: 'Staff Training',
-    description: 'Team excels in food services, customer engagement, and strategic upselling.'
+    description:
+      'Team excels in food services, customer engagement, and strategic upselling.'
   },
   {
     heading: 'One-Stop Solution',
-    description: 'Simplify management with our seamless one-stop solution for quality and improvement.'
+    description:
+      'Simplify management with our seamless one-stop solution for quality and improvement.'
   },
   {
     heading: 'Cost-Cutting Plan',
-    description: 'Maximize efficiency and savings with our tailored cost-cutting plan.'
+    description:
+      'Maximize efficiency and savings with our tailored cost-cutting plan.'
   },
   {
     heading: 'Q&I Verified Board at Your Premises',
-    description: 'Build trust with a Q&I verified board, showcasing your dedication.'
+    description:
+      'Build trust with a Q&I verified board, showcasing your dedication.'
   }
 ]
 
-const ListDesc: React.FC<{ title: string; description: string }> = ({ title, description }) => {
+const ListDesc: React.FC<{ title: string; description: string }> = ({
+  title,
+  description
+}) => {
   return (
-    <li className='d-f gap-2 ai-center'>
+    <li className="d-f gap-2 ai-center">
       <Icon type={true} />
       <div>
-        <h4 style={{display: 'flex', gap: '0.4rem', alignItems: 'center'}}>
+        <h4 style={{ display: 'flex', gap: '0.4rem', alignItems: 'center' }}>
           {title}
         </h4>
         <p>{description}</p>

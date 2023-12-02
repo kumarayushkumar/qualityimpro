@@ -3,7 +3,7 @@ import PricingCard from '../components/PricingCard'
 
 export default function Pricing() {
   return (
-    <section id='pricing' className="pricing__section">
+    <section id="pricing" className="pricing__section">
       <div className="pricing container d-f">
         <div className="pricing__heading d-f f-c">
           <h1>Simple Pricing</h1>
@@ -51,7 +51,7 @@ export default function Pricing() {
             desc="Premium plan offers exclusive benefits and superior features for users."></PricingCard>
         </div>
         <div className="pricing__footer">
-          <p className='fs-xl'>
+          <p className="fs-xl">
             Raising standards, one inspection at a time. Elevate quality in
             hostels, healthcare, and more with our meticulous inspection
             services.

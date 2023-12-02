@@ -1,5 +1,5 @@
-import { Image } from "./Image"
-import { ListDesc } from "./ListDesc"
+import { Image } from './Image'
+import { ListDesc } from './ListDesc'
 
 export const ListHomePage = ({
   title,
@@ -11,11 +11,11 @@ export const ListHomePage = ({
   title: string
   description: string
   image: string
-  className?: string |''
+  className?: string | ''
   first?: boolean
 }) => {
   return (
-    <li className={'list__item--default '+ (className ? className : '')}>
+    <li className={'list__item--default ' + (className ? className : '')}>
       {first ? <Image className="list__image" path={image} /> : null}
       <ListDesc title={title} description={description} />
       {!first ? <Image className="list__image" path={image} /> : null}

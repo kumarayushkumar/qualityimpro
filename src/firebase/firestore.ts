@@ -3,7 +3,10 @@ import { db } from './config'
 import { IForm } from '../interface'
 
 class FirestoreAPIError extends Error {
-  constructor(message: string, public code: string) {
+  constructor(
+    message: string,
+    public code: string
+  ) {
     super(message)
     this.name = 'FirestoreAPIError'
   }

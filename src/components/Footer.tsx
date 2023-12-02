@@ -6,10 +6,7 @@ import {
   faWhatsapp
 } from '@fortawesome/free-brands-svg-icons'
 import { faLinkedinIn } from '@fortawesome/free-brands-svg-icons/faLinkedinIn'
-import {
-  faLocationDot,
-  faPhone
-} from '@fortawesome/free-solid-svg-icons'
+import { faLocationDot, faPhone } from '@fortawesome/free-solid-svg-icons'
 
 export default function Footer() {
   return (
@@ -22,7 +19,7 @@ export default function Footer() {
         </div>
 
         <div className="row mt-xxl fs-xl">
-          <div className="col-12-sm col-4-md">
+          <div className="col-12-xs col-4-md">
             <ul>
               <li>
                 <Link to="/features" className="txt-white">
@@ -47,7 +44,7 @@ export default function Footer() {
             </ul>
           </div>
 
-          <div className="col-12-sm col-4-md">
+          <div className="col-12-xs col-4-md">
             <ul>
               <li>Blog</li>
               <li>Help Center</li>
@@ -56,7 +53,7 @@ export default function Footer() {
             </ul>
           </div>
 
-          <div className="col-12-sm col-4-md">
+          <div className="col-12-xs col-4-md">
             <div>
               <FontAwesomeIcon className="txt-pri" icon={faLocationDot} />
               <p className="px-m d-i">

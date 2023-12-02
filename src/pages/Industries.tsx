@@ -26,7 +26,7 @@ const IndustryData = () => {
 
 export default function Industries() {
   return (
-    <section id='industry' className="industry__section">
+    <section id="industry" className="industry__section">
       <div className="industry__hero"></div>
       <div className="industry__content container">
         <SectionHeader

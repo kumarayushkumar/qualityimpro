@@ -3,7 +3,7 @@ import Form from '../components/Form'
 
 export default function BookDemo() {
   return (
-    <section id='book-demo' className="demo__section">
+    <section id="book-demo" className="demo__section">
       <div className="demo__hero"></div>
       <div className="container">
         <div className="demo__container my-xl row">
@@ -14,7 +14,7 @@ export default function BookDemo() {
                 Fill out the form below and we will get in touch with you
               </p>
             </div>
-            <Button className='mt-l' size="large">
+            <Button className="mt-l" size="large">
               Book a demo
             </Button>
           </div>

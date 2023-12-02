@@ -1,5 +1,4 @@
-import { Icon } from "./ui/Icon"
-
+import { Icon } from './ui/Icon'
 
 const TableRow: React.FC<{
   present: boolean
@@ -62,4 +61,4 @@ const CompareTable: React.FC<{ title: string; subTitle: string }> = ({
   )
 }
 
-export default CompareTable;
+export default CompareTable

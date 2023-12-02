@@ -6,10 +6,7 @@ interface BeforeAfterCardProps {
   type: boolean
 }
 
-const BeforeAfterCard: React.FC<BeforeAfterCardProps> = ({
-  points,
-  type
-}) => {
+const BeforeAfterCard: React.FC<BeforeAfterCardProps> = ({ points, type }) => {
   return (
     <div
       className={
@@ -17,8 +14,8 @@ const BeforeAfterCard: React.FC<BeforeAfterCardProps> = ({
         (type ? 'after' : 'before')
       }>
       <div className="before__after__card__content ">
-        <div className='content__header'>
-          <p>{(type ? 'After' : 'Before') +' Q&I' }</p>
+        <div className="content__header">
+          <p>{(type ? 'After' : 'Before') + ' Q&I'}</p>
         </div>
         <ul className="card__points">
           {points.map((point: string, index: number) => (
@@ -37,7 +34,10 @@ export default function BeforeAfter() {
   return (
     <section className="before__after__section">
       <div className="container">
-        <SectionHeader title='Raising the Bar' description='Our Hospitality Enhancement Solutions'/>
+        <SectionHeader
+          title="Raising the Bar"
+          description="Our Hospitality Enhancement Solutions"
+        />
         <div className="before__after__card__container d-f jc-space-evenly">
           <BeforeAfterCard
             points={[

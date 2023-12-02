@@ -5,7 +5,10 @@
   cursor: pointer;
   @extend .bdr-rd-s;
   text-transform: uppercase;
-  a:link, a:visited,a:hover,a:active {
+  a:link,
+  a:visited,
+  a:hover,
+  a:active {
     text-decoration: none;
     color: inherit;
   }
@@ -95,6 +98,15 @@ select {
   @extend .px-m;
 }
 
+@media (max-width: 768px) {
+  .input {
+    width: 100%;
+  }
+
+  select {
+    width: 100%;
+  }
+}
 // Card
 
 .pricing__card {
