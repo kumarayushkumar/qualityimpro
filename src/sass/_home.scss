@@ -60,18 +60,17 @@
     gap: 2rem;
   }
   .before__after__card {
-    margin: auto 2rem;
-    // .before__after__card__content {
-    //   .content__header {
-    //     p {
-    //       font-size: 3rem;
-    //     }
-    //   }
+    .before__after__card__content {
+      .content__header {
+        p {
+          font-size: 3rem;
+        }
+      }
 
-    //   .card__points {
-    //     font-size: 1.4rem;
-    //   }
-    // }
+      .card__points {
+        font-size: 1.4rem;
+      }
+    }
   }
 }
 
@@ -148,6 +147,30 @@
 
     .form__container {
       width: 100%;
+    }
+  }
+
+  .about__content {
+    align-items: center;
+  }
+
+
+}
+
+
+@media (max-width: 46em) {
+  .before__after__card {
+    .before__after__card__content {
+      padding: auto;
+      .content__header {
+        p {
+          font-size: 2rem;
+        }
+      }
+
+      .card__points {
+        font-size: 1.2rem;
+      }
     }
   }
 }

@@ -12,7 +12,7 @@ const Input: FC<React.InputHTMLAttributes<HTMLInputElement> & IInput> = ({
   className,
   ...props
 }) => {
-  const classes = `input fs-l ${size} ${className || ''}`
+  const classes = `input fs-xl ${size} ${className || ''}`
   return <input className={classes.trim()} {...props} />
 }
 
