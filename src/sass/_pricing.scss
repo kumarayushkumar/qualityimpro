@@ -11,7 +11,6 @@
   // background-size: cover;
   // background-position: top;
   padding-top: 4.8rem;
-  padding-bottom: 9.6rem;
   .pricing__cards {
     display: flex;
     gap: 4rem;
@@ -20,6 +19,7 @@
     flex-direction: column;
     align-items: center;
     gap: 5rem;
+    padding-bottom: 4.8rem;
     &__heading {
       gap: 1rem;
       align-items: center;

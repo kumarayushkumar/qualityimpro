@@ -4,7 +4,7 @@ import { SectionHeader } from '../components/ui/SectionHeader'
 
 export default function Features() {
   return (
-    <div>
+    <section id='feature'>
       <div className="feature__hero"></div>
       <Feature>
         <SectionHeader
@@ -13,6 +13,6 @@ export default function Features() {
         />
       </Feature>
       <GetStarted />
-    </div>
+    </section>
   )
 }

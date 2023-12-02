@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import hero from '../assets/images/hero.jpg'
 import BeforeAfter from '../components/BeforeAfter'
 import Button from '../components/Button'
@@ -21,7 +22,7 @@ export default function Home() {
             </p>
             <div className="hero__button d-f jc-space-between">
               <Button className="hover" size="xlarge" style="secondary">
-                Book a Demo
+                <Link to="book-demo">Book a Demo</Link>
               </Button>
             </div>
           </div>
@@ -31,7 +32,7 @@ export default function Home() {
         </div>
       </section>
       <HomeFeatures />
-      <HomeIndustry  />
+      <HomeIndustry />
       <BeforeAfter />
       <GetStarted />
     </main>

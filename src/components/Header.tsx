@@ -1,12 +1,11 @@
 import { Link, NavLink } from 'react-router-dom'
 
-import cross from '../assets/svg/menux.svg'
 import menu from '../assets/svg/menu.svg'
+import cross from '../assets/svg/menux.svg'
 import logo from '../assets/svg/qnilogo.svg'
 import Button from './Button'
 
 export default function Header() {
-
   const handleClick = () => {
     const headerContainer = document.querySelector('.header__container')
     headerContainer?.classList.toggle('nav-open')
@@ -23,17 +22,26 @@ export default function Header() {
         <nav className="header__nav">
           <ul className="nav__links">
             <li className="link">
-              <NavLink className="nav__link" to="features">
+              <NavLink
+                className="nav__link"
+                to="features"
+                onClick={() => window.scrollTo(0, 0)}>
                 Features
               </NavLink>
             </li>
             <li className="link">
-              <NavLink className="nav__link" to="industries">
+              <NavLink
+                className="nav__link"
+                to="industries"
+                onClick={() => window.scrollTo(0, 0)}>
                 Industries
               </NavLink>
             </li>
             <li className="link">
-              <NavLink className="nav__link" to="pricing">
+              <NavLink
+                className="nav__link"
+                to="pricing"
+                onClick={() => window.scrollTo(0, 0)}>
                 Pricing
               </NavLink>
             </li>
@@ -43,14 +51,19 @@ export default function Header() {
               </NavLink>
             </li> */}
             <li className="link">
-              <NavLink className="nav__link" to="about">
+              <NavLink
+                className="nav__link"
+                to="about"
+                onClick={() => window.scrollTo(0, 0)}>
                 About Us
               </NavLink>
             </li>
           </ul>
         </nav>
         <li className="link">
-          <Button size="large">Book a Demo</Button>
+          <Link to="book-demo" onClick={() => window.scrollTo(0, 0)}>
+            <Button size="large">Book a demo</Button>
+          </Link>
         </li>
         <div className="btn-mobile-nav" onClick={handleClick}>
           <img className="icon-mobile-nav open" src={menu} alt="" />

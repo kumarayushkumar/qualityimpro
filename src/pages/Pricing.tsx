@@ -1,8 +1,9 @@
+import GetStarted from '../components/GetStarted'
 import PricingCard from '../components/PricingCard'
 
 export default function Pricing() {
   return (
-    <div className="pricing__section">
+    <section id='pricing' className="pricing__section">
       <div className="pricing container d-f">
         <div className="pricing__heading d-f f-c">
           <h1>Simple Pricing</h1>
@@ -57,6 +58,7 @@ export default function Pricing() {
           </p>
         </div>
       </div>
-    </div>
+      <GetStarted />
+    </section>
   )
 }

@@ -5,6 +5,11 @@
   cursor: pointer;
   @extend .bdr-rd-s;
   text-transform: uppercase;
+  a:link, a:visited,a:hover,a:active {
+    text-decoration: none;
+    color: inherit;
+  }
+
   &.primary {
     @extend .bg-pri;
     color: $white;

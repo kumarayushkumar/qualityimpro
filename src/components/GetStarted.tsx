@@ -1,4 +1,5 @@
-import Button from "./Button"
+import { Link } from 'react-router-dom'
+import Button from './Button'
 
 const GetStarted = () => {
   return (
@@ -7,9 +8,11 @@ const GetStarted = () => {
         <div className="top ta-c">
           <h2>Get Started</h2>
           <p>Let's get you started on your journey to excellence.</p>
-          <Button className='mt-xl' size="xlarge" style="tertiary">
-            Book a Demo
-          </Button>
+          <Link to="/book-demo" onClick={() => window.scrollTo(0, 0)}>
+            <Button className="mt-xl" size="xlarge" style="tertiary">
+              Book a Demo
+            </Button>
+          </Link>
         </div>
         <div className="down">
           <p className="fs-xl">Start with free trial</p>

@@ -58,30 +58,32 @@ const HomeFeatures: React.FC<React.HTMLAttributes<HTMLDivElement>> = () => {
   return (
     <section className="home__feature my-xxl py-xl">
       <div className="container">
-        <SectionHeader title='Elevate with Excellence' description='A Look into Our Key Features' />
+        <SectionHeader
+          title="Elevate with Excellence"
+          description="A Look into Our Key Features"
+        />
         <div className="home__feature__content">
           <div>
             <div className="content__feature">
               <ul>
-                {
-                  FeatureContent.map((feature, index) => {
-                    return (
-                      <ListDesc
-                        key={index}
-                        title={feature.heading}
-                        description={feature.description} />
-                    )
-                  })
-                }
+                {FeatureContent.map((feature, index) => {
+                  return (
+                    <ListDesc
+                      key={index}
+                      title={feature.heading}
+                      description={feature.description}
+                    />
+                  )
+                })}
               </ul>
               <div className="content_image d-f gap-2">
-                <div className='d-f gap-2 f-c jc-center'>
+                <div className="d-f gap-2 f-c jc-center">
                   <Image path={feature1} />
                   <Image path={feature2} />
                   <Image path={feature3} />
                   <Image path={feature4} />
                 </div>
-                <div className='d-f gap-2 f-c jc-center'>
+                <div className="d-f gap-2 f-c jc-center">
                   <Image path={feature5} />
                   <Image path={feature6} />
                   <Image path={cost} />
@@ -89,8 +91,8 @@ const HomeFeatures: React.FC<React.HTMLAttributes<HTMLDivElement>> = () => {
               </div>
             </div>
           </div>
-          <div className='read__more'>
-            <Link to='/features'>
+          <div className="read__more">
+            <Link to="/features" onClick={() => window.scrollTo(0, 0)}>
               Read More
             </Link>
           </div>
