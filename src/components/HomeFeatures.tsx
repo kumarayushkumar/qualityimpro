@@ -44,7 +44,7 @@ const ListDesc: React.FC<{ title: string; description: string }> = ({ title, des
   return (
     <li className='d-f gap-2 ai-center'>
       <Icon type={true} />
-      <div className='py-s'>
+      <div>
         <h4 style={{display: 'flex', gap: '0.4rem', alignItems: 'center'}}>
           {title}
         </h4>
@@ -76,14 +76,14 @@ const HomeFeatures: React.FC<React.HTMLAttributes<HTMLDivElement>> = () => {
                   )
                 })}
               </ul>
-              <div className="content_image">
-                <div className="image__gallery">
+              <div className="content_image d-f gap-2">
+                <div className="d-f gap-2 f-c jc-center">
                   <Image path={feature1} />
                   <Image path={feature2} />
                   <Image path={feature3} />
                   <Image path={feature4} />
                 </div>
-                <div className="image__gallery">
+                <div className="d-f gap-2 f-c jc-center">
                   <Image path={feature5} />
                   <Image path={feature6} />
                   <Image path={cost} />

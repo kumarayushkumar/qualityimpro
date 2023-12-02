@@ -22,7 +22,7 @@
       font-weight: 400;
     }
   }
-  
+
   .content__feature {
     display: flex;
     align-items: center;
@@ -46,17 +46,6 @@
       li:hover {
         cursor: pointer;
         color: $secondary;
-      }
-    }
-    .content_image {
-      display: flex;
-      gap: 1.6rem;
-
-      .image__gallery {
-        display: flex;
-        gap: 1.6rem;
-        flex-direction: column;
-
       }
     }
   }
