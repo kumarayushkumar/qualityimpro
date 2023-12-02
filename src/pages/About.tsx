@@ -44,7 +44,7 @@ export default function About() {
               <div className="founder__information d-f f-c">
                 <span className="name">Pawan Prajapati</span>
                 <span className="position">
-                  Founder & CEO of Quality and improvisation
+                  Founder & CEO
                 </span>
               </div>
             </div>

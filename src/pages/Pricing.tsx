@@ -51,7 +51,7 @@ export default function Pricing() {
             desc="Premium plan offers exclusive benefits and superior features for users."></PricingCard>
         </div>
         <div className="pricing__footer">
-          <p>
+          <p className='fs-xl'>
             Raising standards, one inspection at a time. Elevate quality in
             hostels, healthcare, and more with our meticulous inspection
             services.

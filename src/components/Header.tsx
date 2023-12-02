@@ -1,15 +1,38 @@
 import { Link, NavLink } from 'react-router-dom'
 
+import { useEffect } from 'react'
 import menu from '../assets/svg/menu.svg'
 import cross from '../assets/svg/menux.svg'
 import logo from '../assets/svg/qnilogo.svg'
 import Button from './Button'
 
 export default function Header() {
-  const handleClick = () => {
+  useEffect(() => {
+    const navLinks = document.querySelectorAll('.link')
+    const navBtn = document.querySelector('.btn-mobile-nav')
+
     const headerContainer = document.querySelector('.header__container')
-    headerContainer?.classList.toggle('nav-open')
-  }
+    navBtn?.addEventListener('click', () => {
+      headerContainer?.classList.toggle('nav-open')
+    })
+    navLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        headerContainer?.classList.remove('nav-open')
+      })
+    })
+  }, [])
+  // const handleClick = () => {
+  //   const headerContainer = document.querySelector('.header__container')
+  //   headerContainer?.classList.toggle('nav-open')
+
+  //   const navLinks = document.querySelectorAll('.link');
+  //   console.log(navLinks)
+  //   navLinks.forEach(link => {
+  //     link.addEventListener('click', () => {
+  //       headerContainer?.classList.remove('nav-open')
+  //     })
+  //   })
+  // }
   return (
     <header className="header">
       <div className="header__container container">
@@ -60,12 +83,12 @@ export default function Header() {
             </li>
           </ul>
         </nav>
-        <li className="link">
+        <li className="link nav__btn">
           <Link to="book-demo" onClick={() => window.scrollTo(0, 0)}>
             <Button size="large">Book a demo</Button>
           </Link>
         </li>
-        <div className="btn-mobile-nav" onClick={handleClick}>
+        <div className="btn-mobile-nav">
           <img className="icon-mobile-nav open" src={menu} alt="" />
           <img className="icon-mobile-nav close" src={cross} alt="" />
         </div>

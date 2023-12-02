@@ -74,8 +74,8 @@
   cursor: pointer;
   display: none;
   .icon-mobile-nav {
-    height: 2.8rem;
-    width: 2.8rem;
+    height: 2.4rem;
+    width: 2.4rem;
     color: #333;
   }
 }
@@ -85,6 +85,10 @@
 }
 
 @media (max-width: 50em) {
+
+  .nav__btn {
+    display: none;
+  }
   .header__nav {
     z-index: 199;
     position: absolute;
@@ -132,4 +136,6 @@
     display: block;
     z-index: 9999;
   }
+
+  
 }
