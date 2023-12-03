@@ -1,12 +1,9 @@
-import hero from '../assets/images/team.jpg'
 import founder from '../assets/images/ceo.png'
 export default function About() {
   return (
     <div>
       <section className="about">
-        <div className="about__hero">
-          <img className="hero__img" src={hero} alt="" />
-        </div>
+        <div className="about__hero"></div>
         <div className="about__content container">
           <div className="about__content--header">
             <h1 className="about__heading">About Us</h1>

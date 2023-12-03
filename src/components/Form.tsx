@@ -55,8 +55,10 @@ export default function Form() {
   return (
     <div>
       <form id="book-demo" className="p-m" onSubmit={handleSubmit(onSubmit)}>
-        <div className="mt-l">
-          <label htmlFor="firstname">First Name</label>
+        <div className="mt-l form__input">
+          <label className="fs-l" htmlFor="firstname">
+            First Name
+          </label>
           <Input
             {...register('firstname')}
             type="text"
@@ -66,8 +68,10 @@ export default function Form() {
           />
           {errors.firstname && <p className="">{errors.firstname.message}</p>}
         </div>
-        <div className="mt-l">
-          <label htmlFor="lastname">Last Name</label>
+        <div className="mt-l form__input">
+          <label className="fs-l" htmlFor="lastname">
+            Last Name
+          </label>
           <Input
             {...register('lastname')}
             type="text"
@@ -77,8 +81,10 @@ export default function Form() {
           />
           {errors.lastname && <p className="">{errors.lastname.message}</p>}
         </div>
-        <div className="mt-l">
-          <label htmlFor="email">Email</label>
+        <div className="mt-l form__input">
+          <label className="fs-l" htmlFor="email">
+            Email
+          </label>
           <Input
             {...register('email')}
             type="email"
@@ -88,8 +94,10 @@ export default function Form() {
           />
           {errors.email && <p className="">{errors.email.message}</p>}
         </div>
-        <div className="mt-l">
-          <label htmlFor="company">Company</label>
+        <div className="mt-l form__input">
+          <label className="fs-l" htmlFor="company">
+            Company
+          </label>
           <Input
             {...register('company')}
             type="text"
@@ -99,8 +107,10 @@ export default function Form() {
           />
           {errors.company && <p className="">{errors.company.message}</p>}
         </div>
-        <div className="mt-l">
-          <label htmlFor="phone">Phone Number</label>
+        <div className="mt-l form__input">
+          <label className="fs-l" htmlFor="phone">
+            Phone Number
+          </label>
           <Input
             {...register('phone', { valueAsNumber: true })}
             className="no-spinners"
@@ -113,8 +123,10 @@ export default function Form() {
           />
           {errors.phone && <p className="">{errors.phone.message}</p>}
         </div>
-        <div className="mt-l">
-          <label htmlFor="category">Category</label>
+        <div className="mt-l form__input">
+          <label className="fs-l" htmlFor="category">
+            Category
+          </label>
           <select {...register('category')} id="category" required>
             <option value="">Select</option>
             {Object.values(Category).map((category, index) => (

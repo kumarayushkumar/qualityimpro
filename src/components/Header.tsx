@@ -8,10 +8,10 @@ import Button from './Button'
 
 export default function Header() {
   useEffect(() => {
+    const headerContainer = document.querySelector('.header__container')
     const navLinks = document.querySelectorAll('.link')
     const navBtn = document.querySelector('.btn-mobile-nav')
-
-    const headerContainer = document.querySelector('.header__container')
+    console.log(navBtn, headerContainer)
     navBtn?.addEventListener('click', () => {
       headerContainer?.classList.toggle('nav-open')
     })
