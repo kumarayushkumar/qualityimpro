@@ -7,7 +7,7 @@ export default function BookDemo() {
       <div className="demo__hero"></div>
       <div className="container">
         <div className="demo__container my-xl row">
-          <div className="demo__content d-f f-c jc-center ai-start col-12-sm col-7-md gap-3">
+          <div className="demo__content d-f f-c jc-center ai-start col-12-sm col-7-lg gap-3">
             <div className="demo__header d-f f-c gap-2">
               <h1 className="demo__title fs-xxl">Book a Demo</h1>
               <p className="demo__description fs-xl">
@@ -18,7 +18,7 @@ export default function BookDemo() {
               Book a demo
             </Button>
           </div>
-          <div className="form__container col-12-sm bdr-rd-m col-5-md">
+          <div className="form__container mt-xl mt-0-lg col-12-sm bdr-rd-m col-5-lg mx-a">
             <Form />
           </div>
         </div>

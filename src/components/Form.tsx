@@ -53,35 +53,35 @@ export default function Form() {
   } = useForm<IForm>({ resolver: zodResolver(schema) })
 
   return (
-    <div>
+    <>
       <form id="book-demo" className="p-m" onSubmit={handleSubmit(onSubmit)}>
-        <div className="mt-l form__input">
+        <div className="mt-l form__input d-f ai-center jc-space-between">
           <label className="fs-l" htmlFor="firstname">
             First Name
           </label>
           <Input
             {...register('firstname')}
             type="text"
-            id="firstName"
+            id="firstname"
             required
             autoComplete="given-name"
           />
           {errors.firstname && <p className="">{errors.firstname.message}</p>}
         </div>
-        <div className="mt-l form__input">
+        <div className="mt-l form__input d-f ai-center jc-space-between">
           <label className="fs-l" htmlFor="lastname">
             Last Name
           </label>
           <Input
             {...register('lastname')}
             type="text"
-            id="lastName"
+            id="lastname"
             required
             autoComplete="family-name"
           />
           {errors.lastname && <p className="">{errors.lastname.message}</p>}
         </div>
-        <div className="mt-l form__input">
+        <div className="mt-l form__input d-f ai-center jc-space-between">
           <label className="fs-l" htmlFor="email">
             Email
           </label>
@@ -94,7 +94,7 @@ export default function Form() {
           />
           {errors.email && <p className="">{errors.email.message}</p>}
         </div>
-        <div className="mt-l form__input">
+        <div className="mt-l form__input d-f ai-center jc-space-between">
           <label className="fs-l" htmlFor="company">
             Company
           </label>
@@ -107,7 +107,7 @@ export default function Form() {
           />
           {errors.company && <p className="">{errors.company.message}</p>}
         </div>
-        <div className="mt-l form__input">
+        <div className="mt-l form__input d-f ai-center jc-space-between">
           <label className="fs-l" htmlFor="phone">
             Phone Number
           </label>
@@ -123,7 +123,7 @@ export default function Form() {
           />
           {errors.phone && <p className="">{errors.phone.message}</p>}
         </div>
-        <div className="mt-l form__input">
+        <div className="mt-l form__input d-f ai-center jc-space-between">
           <label className="fs-l" htmlFor="category">
             Category
           </label>
@@ -137,15 +137,17 @@ export default function Form() {
           </select>
           {errors.category && <p className="">{errors.category.message}</p>}
         </div>
-        <Button
-          style={'secondary'}
-          size={'large'}
-          type="submit"
-          className="mt-xl mx-0 ta-c">
-          Submit
-        </Button>
+        <div className="d-f d-b m-0 jc-center">
+          <Button
+            style={'secondary'}
+            size={'large'}
+            type="submit"
+            className="mt-xl mx-0 ta-c">
+            Submit
+          </Button>
+        </div>
       </form>
       <DevTool control={control} />
-    </div>
+    </>
   )
 }

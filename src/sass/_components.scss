@@ -51,7 +51,6 @@
     @extend .px-xl;
     @extend .fs-xl;
   }
-  transition: all 0.1s ease-in;
 }
 
 .hover.btn:hover {
@@ -60,10 +59,9 @@
 
 // Input
 .input {
-  appearance: none;
+  // appearance: none;
   width: 60%;
-  float: right;
-  font-size: 1rem;
+  // float: right;
   @extend .bdr-rd-s;
   border: 1px solid $border-color;
 
@@ -76,7 +74,7 @@
   &.medium {
     @extend .py-m;
     @extend .px-m;
-    @extend .fs-m;
+    @extend .fs-l;
   }
 
   &.large {
@@ -96,16 +94,6 @@ select {
   border: 1px solid $border-color;
   @extend .py-m;
   @extend .px-m;
-}
-
-@media (max-width: 768px) {
-  .input {
-    width: 100%;
-  }
-
-  select {
-    width: 100%;
-  }
 }
 // Card
 

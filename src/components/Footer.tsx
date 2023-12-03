@@ -6,7 +6,11 @@ import {
   faWhatsapp
 } from '@fortawesome/free-brands-svg-icons'
 import { faLinkedinIn } from '@fortawesome/free-brands-svg-icons/faLinkedinIn'
-import { faLocationDot, faPhone } from '@fortawesome/free-solid-svg-icons'
+import {
+  faEnvelope,
+  faLocationDot,
+  faPhone
+} from '@fortawesome/free-solid-svg-icons'
 
 export default function Footer() {
   return (
@@ -19,7 +23,7 @@ export default function Footer() {
         </div>
 
         <div className="row mt-xxl fs-xl">
-          <div className="col-12-xs col-4-md">
+          <div className="col-12 col-4-md">
             <ul>
               <li>
                 <Link to="/features" className="txt-white">
@@ -44,7 +48,7 @@ export default function Footer() {
             </ul>
           </div>
 
-          <div className="col-12-xs col-4-md">
+          <div className="col-12 mt-l mt-0-md col-4-md">
             <ul>
               <li>Blog</li>
               <li>Help Center</li>
@@ -53,7 +57,7 @@ export default function Footer() {
             </ul>
           </div>
 
-          <div className="col-12-xs col-4-md">
+          <div className="col-12 mt-xl mt-0-md col-4-md">
             <div>
               <FontAwesomeIcon className="txt-pri" icon={faLocationDot} />
               <p className="px-m d-i">
@@ -64,6 +68,14 @@ export default function Footer() {
               <FontAwesomeIcon className="txt-pri" icon={faPhone} />
               <a className="px-m txt-white" href="tel:+918318783376">
                 +91 83187 83376
+              </a>
+            </div>
+            <div className="pt-m">
+              <FontAwesomeIcon className="txt-pri" icon={faEnvelope} />
+              <a
+                className="px-m txt-white"
+                href="mailto:pawan@qualityimpro.com">
+                pawan@qualityimpro.com
               </a>
             </div>
             <div className="social__button pt-xl">
@@ -99,12 +111,12 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="row ta-c jc-center txt-black mt-xxl pt-xl">
+        <div className="row ta-c jc-center txt-black mt-m mt-l-md pt-xl">
           <div className="col-12-sm">
             <hr className="line txt-tri" />
             <div className="mt-l">
               <a
-                className="txt-white"
+                className="txt-white fs-l"
                 href="https://www.growigh.com"
                 target="_blank"
                 rel="noopener noreferrrer">
