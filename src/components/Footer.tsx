@@ -22,12 +22,17 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="row mt-xxl fs-xl">
-          <div className="col-12 col-4-md">
+        <div className="row mt-l pt-s fs-xl">
+          <div className="col-12 col-6-md">
             <ul>
               <li>
                 <Link to="/features" className="txt-white">
                   Feature
+                </Link>
+              </li>
+              <li>
+                <Link to="/industries" className="txt-white">
+                  Industries
                 </Link>
               </li>
               <li>
@@ -40,24 +45,19 @@ export default function Footer() {
                   About Us
                 </Link>
               </li>
-              <li>
-                <Link to="/contact" className="txt-white">
-                  Contact Us
-                </Link>
-              </li>
             </ul>
           </div>
 
-          <div className="col-12 mt-l mt-0-md col-4-md">
+          {/* <div className="col-12 mt-l mt-0-md col-4-md">
             <ul>
               <li>Blog</li>
               <li>Help Center</li>
               <li>Contact Us</li>
               <li>Status</li>
             </ul>
-          </div>
+          </div> */}
 
-          <div className="col-12 mt-xl mt-0-md col-4-md">
+          <div className="col-12 mt-xl mt-0-md col-6-md">
             <div>
               <FontAwesomeIcon className="txt-pri" icon={faLocationDot} />
               <p className="px-m d-i">
@@ -78,7 +78,7 @@ export default function Footer() {
                 pawan@qualityimpro.com
               </a>
             </div>
-            <div className="social__button pt-xl">
+            <div className="social__button pt-l">
               <a
                 className="txt-pri px-s"
                 href=""
