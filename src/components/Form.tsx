@@ -66,8 +66,10 @@ export default function Form() {
             required
             autoComplete="given-name"
           />
-          {errors.firstname && <p className="">{errors.firstname.message}</p>}
         </div>
+        {errors.firstname && (
+          <p className="mt-s ta-r fs-m txt-red">{errors.firstname.message}</p>
+        )}
         <div className="mt-l form__input d-f ai-center jc-space-between">
           <label className="fs-l" htmlFor="lastname">
             Last Name
@@ -79,8 +81,10 @@ export default function Form() {
             required
             autoComplete="family-name"
           />
-          {errors.lastname && <p className="">{errors.lastname.message}</p>}
         </div>
+        {errors.lastname && (
+          <p className="mt-s ta-r fs-m txt-red">{errors.lastname.message}</p>
+        )}
         <div className="mt-l form__input d-f ai-center jc-space-between">
           <label className="fs-l" htmlFor="email">
             Email
@@ -92,8 +96,10 @@ export default function Form() {
             required
             autoComplete="email"
           />
-          {errors.email && <p className="">{errors.email.message}</p>}
         </div>
+        {errors.email && (
+          <p className="mt-s ta-r fs-m txt-red">{errors.email.message}</p>
+        )}
         <div className="mt-l form__input d-f ai-center jc-space-between">
           <label className="fs-l" htmlFor="company">
             Company
@@ -105,8 +111,10 @@ export default function Form() {
             required
             autoComplete="organisation"
           />
-          {errors.company && <p className="">{errors.company.message}</p>}
         </div>
+        {errors.company && (
+          <p className="mt-s ta-r fs-m txt-red">{errors.company.message}</p>
+        )}
         <div className="mt-l form__input d-f ai-center jc-space-between">
           <label className="fs-l" htmlFor="phone">
             Phone Number
@@ -121,8 +129,10 @@ export default function Form() {
             required
             autoComplete="tel-national"
           />
-          {errors.phone && <p className="">{errors.phone.message}</p>}
         </div>
+        {errors.phone && (
+          <p className="mt-s ta-r fs-m txt-red">{errors.phone.message}</p>
+        )}
         <div className="mt-l form__input d-f ai-center jc-space-between">
           <label className="fs-l" htmlFor="category">
             Category
@@ -135,8 +145,10 @@ export default function Form() {
               </option>
             ))}
           </select>
-          {errors.category && <p className="">{errors.category.message}</p>}
         </div>
+        {errors.category && (
+          <p className="mt-s ta-r fs-m txt-red">{errors.category.message}</p>
+        )}
         <div className="d-f d-b m-0 jc-center">
           <Button
             style={'secondary'}

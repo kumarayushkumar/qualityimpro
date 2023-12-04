@@ -9,12 +9,7 @@ export default function Error() {
 
   useEffect(() => {
     const redirectTimeout = setTimeout(() => {
-      const isOnAdminPage = location.pathname.startsWith('/admin')
-      if (isOnAdminPage) {
-        navigate('/admin', { replace: true })
-      } else {
-        navigate('/', { replace: true })
-      }
+      navigate('/', { replace: true })
     }, 3000)
 
     return () => clearTimeout(redirectTimeout)

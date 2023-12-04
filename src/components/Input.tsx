@@ -1,4 +1,4 @@
-import { FC } from 'react'
+import { FC, forwardRef } from 'react'
 
 type InputSize = 'small' | 'medium' | 'large'
 
@@ -7,13 +7,15 @@ export interface IInput {
   className?: string
 }
 
-const Input: FC<React.InputHTMLAttributes<HTMLInputElement> & IInput> = ({
-  size = 'medium',
-  className,
-  ...props
-}) => {
-  const classes = `input fs-xl ${size} ${className || ''}`
-  return <input className={classes.trim()} {...props} />
-}
+const Input: FC<React.InputHTMLAttributes<HTMLInputElement> & IInput> =
+  forwardRef(
+    (
+      { size = 'medium', className, ...props },
+      ref: React.Ref<HTMLInputElement>
+    ) => {
+      const classes = `input fs-xl ${size} ${className || ''}`
+      return <input ref={ref} className={classes.trim()} {...props} />
+    }
+  )
 
 export default Input
