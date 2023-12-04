@@ -74,8 +74,8 @@ export default function Footer() {
               <FontAwesomeIcon className="txt-pri" icon={faEnvelope} />
               <a
                 className="px-m txt-white"
-                href="mailto:pawan@qualityimpro.com">
-                pawan@qualityimpro.com
+                href="mailto:support@qualityimpro.com">
+                support@qualityimpro.com
               </a>
             </div>
             <div className="social__button pt-l">

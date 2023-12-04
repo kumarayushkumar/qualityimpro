@@ -41,6 +41,11 @@ export default function About() {
               <div className="founder__information d-f f-c">
                 <span className="name">Pawan Prajapati</span>
                 <span className="position">Founder & CEO</span>
+                <span className="position">
+                  <a href="mailto:pawan@qualityimpro.com">
+                    pawan@qualityimpro.com
+                  </a>
+                </span>
               </div>
             </div>
           </div>
