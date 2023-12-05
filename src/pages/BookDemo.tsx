@@ -1,4 +1,4 @@
-import Button from '../components/Button'
+import Button from '../components/atom/Button'
 import Form from '../components/Form'
 
 export default function BookDemo() {

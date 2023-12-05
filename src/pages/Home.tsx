@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'
 import hero from '../assets/images/hero.jpg'
 import BeforeAfter from '../components/BeforeAfter'
-import Button from '../components/Button'
+import Button from '../components/atom/Button'
 import GetStarted from '../components/GetStarted'
 import HomeFeatures from '../components/HomeFeatures'
 import { HomeIndustry } from '../components/HomeIndustry'

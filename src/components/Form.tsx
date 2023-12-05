@@ -1,13 +1,13 @@
 import { useForm } from 'react-hook-form'
 import { z } from 'zod'
 import { zodResolver } from '@hookform/resolvers/zod'
-import { DevTool } from '@hookform/devtools'
+// import { DevTool } from '@hookform/devtools'
 import { Timestamp } from 'firebase/firestore'
 
 import { Category, IForm } from '../interface'
 import { saveData } from '../firebase/firestore'
-import Button from './Button'
-import Input from './Input'
+import Button from './atom/Button'
+import Input from './atom/Input'
 
 const categoryValues = Object.values(Category) as [string, ...string[]]
 
@@ -48,7 +48,7 @@ export default function Form() {
   const {
     register,
     handleSubmit,
-    control,
+    // control,
     formState: { errors }
   } = useForm<IForm>({ resolver: zodResolver(schema) })
 
@@ -159,7 +159,7 @@ export default function Form() {
           </Button>
         </div>
       </form>
-      <DevTool control={control} />
+      {/* <DevTool control={control} /> */}
     </>
   )
 }

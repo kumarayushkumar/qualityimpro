@@ -7,11 +7,11 @@ import premises from '../assets/images/premises.jpg'
 import solution from '../assets/images/solution.jpg'
 import staff from '../assets/images/staff.jpg'
 
-type FeatureProps = {
+interface IFeature {
   children?: React.ReactNode
 }
 
-const Feature = ({ children }: FeatureProps) => {
+const Feature = ({ children }: IFeature) => {
   return (
     <section className="feature container d-f f-c">
       {children}

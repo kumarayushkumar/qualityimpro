@@ -1,7 +1,6 @@
 import founder from '../assets/images/ceo.png'
 export default function About() {
   return (
-    <div>
       <section className="about">
         <div className="about__hero"></div>
         <div className="about__content container">
@@ -51,6 +50,5 @@ export default function About() {
           </div>
         </div>
       </section>
-    </div>
   )
 }

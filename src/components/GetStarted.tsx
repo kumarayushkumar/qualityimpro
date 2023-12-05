@@ -1,9 +1,9 @@
 import { Link } from 'react-router-dom'
-import Button from './Button'
+import Button from './atom/Button'
 
 const GetStarted = () => {
   return (
-    <div className="get__started">
+    <section className="get__started">
       <div className="get__started__content">
         <div className="top ta-c">
           <h2>Get Started</h2>
@@ -18,7 +18,7 @@ const GetStarted = () => {
           <p className="fs-xl">Start with free trial</p>
         </div>
       </div>
-    </div>
+    </section>
   )
 }
 

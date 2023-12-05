@@ -1,12 +1,12 @@
 import { Icon } from './ui/Icon'
 import { SectionHeader } from './ui/SectionHeader'
 
-interface BeforeAfterCardProps {
+interface IBeforeAfterCard {
   points: string[]
   type: boolean
 }
 
-const BeforeAfterCard: React.FC<BeforeAfterCardProps> = ({ points, type }) => {
+const BeforeAfterCard: React.FC<IBeforeAfterCard> = ({ points, type }) => {
   return (
     <div
       className={

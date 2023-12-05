@@ -4,7 +4,7 @@ import { useEffect } from 'react'
 import menu from '../assets/svg/menu.svg'
 import cross from '../assets/svg/menux.svg'
 import logo from '../assets/svg/qnilogo.svg'
-import Button from './Button'
+import Button from './atom/Button'
 
 export default function Header() {
   useEffect(() => {
@@ -21,18 +21,7 @@ export default function Header() {
       })
     })
   }, [])
-  // const handleClick = () => {
-  //   const headerContainer = document.querySelector('.header__container')
-  //   headerContainer?.classList.toggle('nav-open')
 
-  //   const navLinks = document.querySelectorAll('.link');
-  //   console.log(navLinks)
-  //   navLinks.forEach(link => {
-  //     link.addEventListener('click', () => {
-  //       headerContainer?.classList.remove('nav-open')
-  //     })
-  //   })
-  // }
   return (
     <header className="header">
       <div className="header__container container">
