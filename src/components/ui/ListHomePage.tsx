@@ -14,14 +14,11 @@ export const ListHomePage = ({
   className?: string | ''
   first?: boolean
 }) => {
-  // useEffect(()=> {
-
-  // })
   return (
-    <li className={'list__item--default ' + (className ? className : '')}>
+    <div className={'list__item--default ' + (className ? className : '')}>
       {first ? <Image className="list__image" path={image} /> : null}
       <ListDesc title={title} description={description} />
       {!first ? <Image className="list__image" path={image} /> : null}
-    </li>
+    </div>
   )
 }

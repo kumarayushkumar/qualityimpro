@@ -16,7 +16,7 @@ const Feature = ({ children }: IFeature) => {
     <section className="feature container d-f f-c">
       {children}
       <div className="feature__content">
-        <ul className="feature__list d-f f-c">
+        <div className="feature__list d-f f-c">
           <ListHomePage
             title="Hygiene and Quality Audit with Solutions"
             description="Our dedicated inspector ensures top cleanliness and quality through comprehensive, periodic, and unannounced inspections covering personal grooming, premises hygiene, and food handling. Detailed reports will be promptly sent to the organization's owner or manager for thorough oversight."
@@ -58,7 +58,7 @@ const Feature = ({ children }: IFeature) => {
             image={solution}
             first
           />
-        </ul>
+        </div>
       </div>
     </section>
   )

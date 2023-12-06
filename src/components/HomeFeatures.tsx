@@ -51,9 +51,9 @@ const ListDesc: React.FC<{ title: string; description: string }> = ({
     <li className="d-f gap-2 ai-center">
       <Icon type={true} />
       <div>
-        <h4 style={{ display: 'flex', gap: '0.4rem', alignItems: 'center' }}>
+        <h3 style={{ display: 'flex', gap: '0.4rem', alignItems: 'center' }}>
           {title}
-        </h4>
+        </h3>
         <p>{description}</p>
       </div>
     </li>
