@@ -73,6 +73,7 @@ export default function Footer() {
             <div className="pt-m">
               <FontAwesomeIcon className="txt-pri" icon={faEnvelope} />
               <a
+                aria-label="Visit our email page"
                 className="px-m txt-white"
                 href="mailto:support@qualityimpro.com">
                 support@qualityimpro.com
@@ -80,6 +81,7 @@ export default function Footer() {
             </div>
             <div className="social__button pt-l">
               <a
+                aria-label="Visit our instagram page"
                 className="txt-pri px-s"
                 href=""
                 target="_blank"
@@ -87,6 +89,7 @@ export default function Footer() {
                 <FontAwesomeIcon className="" icon={faInstagram} />
               </a>
               <a
+                aria-label="Visit our facebook page"
                 className="txt-pri px-s"
                 href=""
                 target="_blank"
@@ -94,6 +97,7 @@ export default function Footer() {
                 <FontAwesomeIcon className="" icon={faFacebookF} />
               </a>
               <a
+                aria-label="Visit our linkedin page"
                 className="txt-pri px-s"
                 href=""
                 target="_blank"
@@ -101,6 +105,7 @@ export default function Footer() {
                 <FontAwesomeIcon className="" icon={faLinkedinIn} />
               </a>
               <a
+                aria-label="Visit our whatsapp page"
                 className="txt-pri px-s"
                 href="https://api.whatsapp.com/send/?phone=918318783376&text&app_absent=0"
                 target="_blank"
@@ -116,6 +121,7 @@ export default function Footer() {
             <hr className="line txt-tri" />
             <div className="mt-l">
               <a
+                aria-label="Visit our growigh website"
                 className="txt-white fs-l"
                 href="https://www.growigh.com"
                 target="_blank"
