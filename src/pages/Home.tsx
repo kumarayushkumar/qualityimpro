@@ -68,8 +68,9 @@ export default function Home() {
               <span className="fs-xxxl">Improvisation</span> Platform
             </h1>
             <p className="hero__description fs-xl fw-4">
-              Q&I is a platform that helps you to improve the quality of your
-              products and services.
+              Elevate your food and hospitality business with end-to-end
+              solutions, enhancing quality, customer experience, and maximizing
+              revenue for elevated standards.
             </p>
             <div className="hero__button d-f jc-space-between">
               <Button className="hover" size="xlarge" style="secondary">
