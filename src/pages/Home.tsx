@@ -68,9 +68,9 @@ export default function Home() {
               <span className="fs-xxxl">Improvisation</span> Platform
             </h1>
             <p className="hero__description fs-xl fw-4">
-              Elevate your food and hospitality business with end-to-end
-              solutions, enhancing quality, customer experience, and maximizing
-              revenue for elevated standards.
+              Elevate your food and hospitality business with our comprehensive
+              solutions, boosting quality, customer experience, and
+              revenue maximization.
             </p>
             <div className="hero__button d-f jc-space-between">
               <Button className="hover" size="xlarge" style="secondary">
