@@ -26,22 +26,34 @@ export default function Footer() {
           <div className="col-12 col-6-md">
             <ul>
               <li>
-                <Link to="/features" className="txt-white">
+                <Link
+                  to="/features"
+                  className="txt-white"
+                  onClick={() => window.scrollTo(0, 0)}>
                   Feature
                 </Link>
               </li>
               <li>
-                <Link to="/industries" className="txt-white">
+                <Link
+                  to="/industries"
+                  className="txt-white"
+                  onClick={() => window.scrollTo(0, 0)}>
                   Industries
                 </Link>
               </li>
               <li>
-                <Link to="/pricing" className="txt-white">
+                <Link
+                  to="/pricing"
+                  className="txt-white"
+                  onClick={() => window.scrollTo(0, 0)}>
                   Pricing
                 </Link>
               </li>
               <li>
-                <Link to="/about" className="txt-white">
+                <Link
+                  to="/about"
+                  className="txt-white"
+                  onClick={() => window.scrollTo(0, 0)}>
                   About Us
                 </Link>
               </li>

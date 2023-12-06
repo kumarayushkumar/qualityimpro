@@ -117,25 +117,25 @@
 
   .home__industry--content {
     div:nth-child(odd) {
-      li {
+      div {
         flex-direction: column;
       }
     }
     div:nth-child(even) {
-      li {
+      div {
         flex-direction: column-reverse;
       }
     }
   }
   .feature__list,
   .industry__list {
-    li {
+    div {
       gap: 5rem;
     }
-    li:nth-child(even) {
+    div:nth-child(even) {
       flex-direction: column;
     }
-    li:nth-child(odd) {
+    div:nth-child(odd) {
       flex-direction: column-reverse;
     }
   }
