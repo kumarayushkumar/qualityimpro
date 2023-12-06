@@ -82,7 +82,7 @@ export default function Footer() {
             <div className="social__button pt-l">
               <a
                 aria-label="Visit our instagram page"
-                className="txt-pri px-s"
+                className="txt-pri px-m"
                 href=""
                 target="_blank"
                 rel="noopener noreferrrer">
@@ -90,7 +90,7 @@ export default function Footer() {
               </a>
               <a
                 aria-label="Visit our facebook page"
-                className="txt-pri px-s"
+                className="txt-pri px-m"
                 href=""
                 target="_blank"
                 rel="noopener noreferrrer">
@@ -98,7 +98,7 @@ export default function Footer() {
               </a>
               <a
                 aria-label="Visit our linkedin page"
-                className="txt-pri px-s"
+                className="txt-pri px-m"
                 href=""
                 target="_blank"
                 rel="noopener noreferrrer">
@@ -106,7 +106,7 @@ export default function Footer() {
               </a>
               <a
                 aria-label="Visit our whatsapp page"
-                className="txt-pri px-s"
+                className="txt-pri px-m"
                 href="https://api.whatsapp.com/send/?phone=918318783376&text&app_absent=0"
                 target="_blank"
                 rel="noopener noreferrrer">
