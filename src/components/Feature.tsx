@@ -1,3 +1,5 @@
+import { useEffect } from 'react'
+
 import { ListHomePage } from './ui/ListHomePage'
 // images
 import cost from '../assets/images/cost.webp'
@@ -12,6 +14,31 @@ interface IFeature {
 }
 
 const Feature = ({ children }: IFeature) => {
+  useEffect(() => {
+    const allLists = document.querySelectorAll('.list__item--default')
+
+    const revealSectionList = (
+      entries: IntersectionObserverEntry[],
+      observer: IntersectionObserver
+    ) => {
+      const [entry] = entries
+
+      if (!entry.isIntersecting) return
+
+      entry.target.classList.remove('list__item--hidden')
+      observer.unobserve(entry.target)
+    }
+
+    const sectionObserverList = new IntersectionObserver(revealSectionList, {
+      root: null,
+      threshold: 0.15
+    })
+
+    allLists.forEach(function (section) {
+      sectionObserverList.observe(section)
+      section.classList.add('list__item--hidden')
+    })
+  }, [])
   return (
     <section className="feature container d-f f-c">
       {children}
