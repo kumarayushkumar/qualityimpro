@@ -7,7 +7,6 @@ import { SectionHeader } from '../components/ui/SectionHeader'
 const IndustryData = () => {
   return (
     <div className="industry__list">
-      <div>
         <ListHomePage
           title="Empowering Your Restaurant Team"
           description="Absolutely, maintaining high standards of hygiene and service is crucial for a restaurant's success. Balancing quality, hygiene, and cost efficiency ensures customer satisfaction and profitability"
@@ -21,7 +20,6 @@ const IndustryData = () => {
           className="industry__list--item"
           first
         />
-      </div>
     </div>
   )
 }
