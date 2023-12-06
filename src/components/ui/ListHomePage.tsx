@@ -1,5 +1,3 @@
-import { useEffect } from 'react'
-
 import { Image } from './Image'
 import { ListDesc } from './ListDesc'
 
