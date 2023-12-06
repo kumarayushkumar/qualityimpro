@@ -6,7 +6,7 @@
   &__hero {
     height: 60vh;
     overflow: hidden;
-    background-image: url('../assets/images/team.jpg');
+    background-image: url('../assets/images/team.webp');
     background-size: cover;
     background-position: center;
     .hero__img {
@@ -64,7 +64,10 @@
             font-size: 0.8rem;
             color: $grey;
 
-            a:link, a:visited, a:hover, a:active {
+            a:link,
+            a:visited,
+            a:hover,
+            a:active {
               color: $grey;
             }
           }

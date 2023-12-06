@@ -74,11 +74,11 @@ export default function Header() {
             </li>
           </ul>
         </nav>
-        <li className="link nav__btn">
+        <div className="nav__btn">
           <Link to="book-demo" onClick={() => window.scrollTo(0, 0)}>
             <Button size="large">Book a demo</Button>
           </Link>
-        </li>
+        </div>
         <div className="btn-mobile-nav">
           <img className="icon-mobile-nav open" src={menu} alt="" />
           <img className="icon-mobile-nav close" src={cross} alt="" />

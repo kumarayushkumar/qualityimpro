@@ -154,7 +154,7 @@ select {
       rgba(0, 0, 0, 0.9),
       rgba(0, 0, 0, 0.4)
     ),
-    url('../assets/images/getstart.jpg');
+    url('../assets/images/getstart.webp');
   background-size: cover;
   height: 30rem;
 
@@ -206,7 +206,9 @@ select {
   display: flex;
   align-items: center;
   gap: 3rem;
-  transition: transform 1s, opacity 1s;
+  transition:
+    transform 1s,
+    opacity 1s;
   .list__desc {
     h3 {
       font-size: 2rem;

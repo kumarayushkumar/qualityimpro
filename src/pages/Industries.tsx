@@ -1,5 +1,5 @@
-import hotel from '../assets/images/hotel.jpg'
-import restaurant from '../assets/images/restaurant.jpg'
+import hotel from '../assets/images/hotel.webp'
+import restaurant from '../assets/images/restaurant.webp'
 import GetStarted from '../components/GetStarted'
 import { ListHomePage } from '../components/ui/ListHomePage'
 import { SectionHeader } from '../components/ui/SectionHeader'

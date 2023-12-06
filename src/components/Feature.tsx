@@ -1,11 +1,11 @@
 import { ListHomePage } from './ui/ListHomePage'
 // images
-import cost from '../assets/images/cost.jpg'
-import hygiene from '../assets/images/hygiene.jpg'
-import listing from '../assets/images/listing.jpg'
-import premises from '../assets/images/premises.jpg'
-import solution from '../assets/images/solution.jpg'
-import staff from '../assets/images/staff.jpg'
+import cost from '../assets/images/cost.webp'
+import hygiene from '../assets/images/hygiene.webp'
+import listing from '../assets/images/listing.webp'
+import premises from '../assets/images/premises.webp'
+import solution from '../assets/images/solution.webp'
+import staff from '../assets/images/staff.webp'
 
 interface IFeature {
   children?: React.ReactNode

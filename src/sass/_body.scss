@@ -5,14 +5,19 @@
 }
 
 @font-face {
-  font-family: 'Lead';
-  src: url('../assets/fonts/Domine-VariableFont_wght.ttf') format('truetype');
-}
-
-@font-face {
   font-family: 'Body';
   src: url('../assets/fonts/OpenSans-VariableFont_wdth\,wght.ttf')
     format('truetype');
+}
+
+@font-face {
+  font-family: 'Lora';
+  src: url('../assets/fonts/Lora-VariableFont_wght.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Marcellus';
+  src: url('../assets/fonts/Marcellus-Regular.ttf') format('truetype');
 }
 
 body {
@@ -36,7 +41,8 @@ html {
   appearance: textfield;
 }
 
-.list__item--hidden, .section--hidden {
+.list__item--hidden,
+.section--hidden {
   opacity: 0;
   transform: translateY(8rem);
 }

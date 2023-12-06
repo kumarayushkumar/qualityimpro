@@ -1,6 +1,6 @@
 import { useEffect } from 'react'
 import { Link } from 'react-router-dom'
-import hero from '../assets/images/hero.jpg'
+import hero from '../assets/images/hero.webp'
 import BeforeAfter from '../components/BeforeAfter'
 import GetStarted from '../components/GetStarted'
 import HomeFeatures from '../components/HomeFeatures'

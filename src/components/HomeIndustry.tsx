@@ -1,7 +1,7 @@
+import hotel from '../assets/images/hotel.webp'
+import restaurant from '../assets/images/restaurant.webp'
 import { ListHomePage } from './ui/ListHomePage'
 import { SectionHeader } from './ui/SectionHeader'
-import hotel from '../assets/images/hotel.jpg'
-import restaurant from '../assets/images/restaurant.jpg'
 
 const IndustryData = () => {
   return (
