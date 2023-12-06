@@ -11,7 +11,6 @@ export default function Header() {
     const headerContainer = document.querySelector('.header__container')
     const navLinks = document.querySelectorAll('.link')
     const navBtn = document.querySelector('.btn-mobile-nav')
-    console.log(navBtn, headerContainer)
     navBtn?.addEventListener('click', () => {
       headerContainer?.classList.toggle('nav-open')
     })
@@ -25,7 +24,10 @@ export default function Header() {
   return (
     <header className="header">
       <div className="header__container container">
-        <Link to="/" className="logo__link">
+        <Link
+          to="/"
+          className="logo__link"
+          onClick={() => window.scrollTo(0, 0)}>
           <img src={logo} alt="Qni logo" />
           <span className="company-name">
             Quality & <br /> Improvisation

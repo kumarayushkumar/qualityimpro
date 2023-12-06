@@ -3,7 +3,7 @@ import Button from './atom/Button'
 
 const GetStarted = () => {
   return (
-    <section className="get__started">
+    <section className="get__started section">
       <div className="get__started__content">
         <div className="top ta-c">
           <h2>Get Started</h2>

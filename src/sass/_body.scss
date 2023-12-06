@@ -35,3 +35,8 @@ html {
   -moz-appearance: textfield;
   appearance: textfield;
 }
+
+.list__item--hidden, .section--hidden {
+  opacity: 0;
+  transform: translateY(8rem);
+}

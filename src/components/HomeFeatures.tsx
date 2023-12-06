@@ -62,7 +62,7 @@ const ListDesc: React.FC<{ title: string; description: string }> = ({
 
 const HomeFeatures: React.FC<React.HTMLAttributes<HTMLDivElement>> = () => {
   return (
-    <section className="home__feature my-xxl py-xl">
+    <section className="home__feature my-xxl py-xl section">
       <div className="container">
         <SectionHeader
           title="Elevate with Excellence"

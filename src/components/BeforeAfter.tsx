@@ -32,7 +32,7 @@ const BeforeAfterCard: React.FC<IBeforeAfterCard> = ({ points, type }) => {
 
 export default function BeforeAfter() {
   return (
-    <section className="before__after__section">
+    <section className="before__after__section section">
       <div className="container">
         <SectionHeader
           title="Raising the Bar"

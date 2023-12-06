@@ -1,11 +1,12 @@
-import { useForm } from 'react-hook-form'
-import { z } from 'zod'
 import { zodResolver } from '@hookform/resolvers/zod'
+import { useForm } from 'react-hook-form'
+import { useState } from 'react'
+import { z } from 'zod'
 // import { DevTool } from '@hookform/devtools'
 import { Timestamp } from 'firebase/firestore'
 
-import { Category, IForm } from '../interface'
 import { saveData } from '../firebase/firestore'
+import { Category, IForm } from '../interface'
 import Button from './atom/Button'
 import Input from './atom/Input'
 
@@ -33,24 +34,31 @@ const schema = z.object({
   })
 })
 
-const onSubmit = (data: IForm) => {
-  data.created_time = Timestamp.now()
-  saveData(data)
-    .then(() => {
-      console.log('success')
-    })
-    .catch(error => {
-      console.log(error)
-    })
-}
-
 export default function Form() {
   const {
     register,
     handleSubmit,
     // control,
+    reset,
     formState: { errors }
   } = useForm<IForm>({ resolver: zodResolver(schema) })
+  const onSubmit = (data: IForm) => {
+    data.created_time = Timestamp.now()
+    saveData(data)
+      .then(() => {
+        reset()
+        const formBtn = document.querySelector('#form-btn') as HTMLButtonElement
+        const formContainer = document.querySelector('.form__container') as HTMLDivElement
+        formContainer.style.boxShadow = '0 0 6px #00bfb3'
+        formBtn.disabled = true
+        formBtn.innerText = 'Submitted'
+        formBtn.classList.add('btn-disabled')
+        formBtn.style.backgroundColor = '#334155'
+      })
+      .catch(error => {
+        console.log(error)
+      })
+  }
 
   return (
     <>
@@ -154,6 +162,7 @@ export default function Form() {
             style={'secondary'}
             size={'large'}
             type="submit"
+            id="form-btn"
             className="mt-xl mx-0 ta-c">
             Submit
           </Button>

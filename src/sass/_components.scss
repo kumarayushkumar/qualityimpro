@@ -206,6 +206,7 @@ select {
   display: flex;
   align-items: center;
   gap: 3rem;
+  transition: transform 1s, opacity 1s;
   .list__desc {
     h3 {
       font-size: 2rem;

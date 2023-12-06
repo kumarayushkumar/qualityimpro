@@ -1,3 +1,5 @@
+import { useEffect } from 'react'
+
 import { Image } from './Image'
 import { ListDesc } from './ListDesc'
 
@@ -14,6 +16,9 @@ export const ListHomePage = ({
   className?: string | ''
   first?: boolean
 }) => {
+  // useEffect(()=> {
+
+  // })
   return (
     <li className={'list__item--default ' + (className ? className : '')}>
       {first ? <Image className="list__image" path={image} /> : null}
