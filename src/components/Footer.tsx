@@ -95,7 +95,7 @@ export default function Footer() {
               <a
                 aria-label="Visit our instagram page"
                 className="txt-pri px-m"
-                href=""
+                href="https://www.instagram.com/qualityandimprovisation/"
                 target="_blank"
                 rel="noopener noreferrrer">
                 <FontAwesomeIcon className="" icon={faInstagram} />
@@ -103,7 +103,7 @@ export default function Footer() {
               <a
                 aria-label="Visit our facebook page"
                 className="txt-pri px-m"
-                href=""
+                href="https://www.facebook.com/qualityandimprovisation"
                 target="_blank"
                 rel="noopener noreferrrer">
                 <FontAwesomeIcon className="" icon={faFacebookF} />
@@ -111,7 +111,7 @@ export default function Footer() {
               <a
                 aria-label="Visit our linkedin page"
                 className="txt-pri px-m"
-                href=""
+                href="https://www.linkedin.com/company/quality-and-imrovisation/about"
                 target="_blank"
                 rel="noopener noreferrrer">
                 <FontAwesomeIcon className="" icon={faLinkedinIn} />
@@ -133,7 +133,7 @@ export default function Footer() {
             <hr className="line txt-tri" />
             <div className="mt-l">
               <a
-                aria-label="Visit our growigh website"
+                aria-label="Visit Growigh website"
                 className="txt-white fs-l"
                 href="https://www.growigh.com"
                 target="_blank"
