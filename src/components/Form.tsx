@@ -6,7 +6,7 @@ import { Timestamp } from 'firebase/firestore'
 
 import { saveData } from '../firebase/firestore'
 import { Category, IForm } from '../interface'
-import sendEmail from '../utils/sentEmail'
+import sendEmail from '../utils/sendEmail'
 import Button from './atom/Button'
 import Input from './atom/Input'
 
@@ -52,7 +52,8 @@ export default function Form({ setError }: FormProps) {
     try {
       await saveData(data)
       const response = await sendEmail(data)
-      if (response.status !== 250) {
+      console.log(response)
+      if (!response.success) {
         throw new Error('Form not submitted')
       }
       reset()
