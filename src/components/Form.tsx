@@ -6,6 +6,7 @@ import { Timestamp } from 'firebase/firestore'
 
 import { saveData } from '../firebase/firestore'
 import { Category, IForm } from '../interface'
+import sendEmail from '../utils/sentEmail'
 import Button from './atom/Button'
 import Input from './atom/Input'
 
@@ -33,7 +34,11 @@ const schema = z.object({
   })
 })
 
-export default function Form() {
+type FormProps = {
+  setError: (error: string) => void
+}
+
+export default function Form({ setError }: FormProps) {
   const {
     register,
     handleSubmit,
@@ -41,45 +46,30 @@ export default function Form() {
     reset,
     formState: { errors }
   } = useForm<IForm>({ resolver: zodResolver(schema) })
-  const onSubmit = (data: IForm) => {
+
+  const onSubmit = async (data: IForm) => {
     data.created_time = Timestamp.now()
-    saveData(data)
-      .then(async() => {
-        const response = await fetch(
-          `https://api.retool.com/v1/workflows/8a84bd95-cc37-4d64-92ba-3677afd7c1d1/startTrigger?workflowApiKey=${
-            import.meta.env.VITE_RETOOL_API
-          }`,
-          {
-            method: 'POST',
-            headers: {
-              'Content-Type': 'application/json'
-            },
-            body: JSON.stringify({
-              firstname: data.firstname,
-              lastname: data.lastname,
-              email: data.email,
-              company: data.company,
-              phone: data.phone,
-              category: data.category
-            })
-          }
-        )
-
-        const json = await response.json();
-        console.log(json);
-
-        reset()
-        const formBtn = document.querySelector('#form-btn') as HTMLButtonElement
-        const formContainer = document.querySelector('.form__container') as HTMLDivElement
-        formContainer.style.boxShadow = '0 0 6px #00bfb3'
-        formBtn.disabled = true
-        formBtn.innerText = 'Submitted'
-        formBtn.classList.add('btn-disabled')
-        formBtn.style.backgroundColor = '#334155'
-      })
-      .catch(error => {
-        console.log(error)
-      })
+    try {
+      await saveData(data)
+      const response = await sendEmail(data)
+      if (response.status !== 250) {
+        throw new Error('Form not submitted')
+      }
+      reset()
+      const formBtn = document.querySelector('#form-btn') as HTMLButtonElement
+      const formContainer = document.querySelector(
+        '.form__container'
+      ) as HTMLDivElement
+      formContainer.style.boxShadow = '0 0 6px #00bfb3'
+      formBtn.disabled = true
+      formBtn.innerText = 'Submitted'
+      formBtn.classList.add('btn-disabled')
+      formBtn.style.backgroundColor = '#334155'
+    } catch (error) {
+      if (error instanceof Error) {
+        setError(error.message)
+      }
+    }
   }
 
   return (

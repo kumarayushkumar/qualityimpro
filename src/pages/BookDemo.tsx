@@ -1,7 +1,10 @@
+import { useState } from 'react'
 import Button from '../components/atom/Button'
 import Form from '../components/Form'
+import ErrorMessage from '../components/ui/ErrorMessage'
 
 export default function BookDemo() {
+  const [error, setError] = useState('' as string)
   return (
     <section id="book-demo" className="demo__section">
       <div className="demo__hero"></div>
@@ -18,8 +21,9 @@ export default function BookDemo() {
               Book a demo
             </Button>
           </div>
-          <div className="form__container mt-xl mt-0-lg col-12-sm bdr-rd-m col-5-lg mx-a">
-            <Form />
+          <div className="form__container mt-xl mt-0-lg col-12-sm bdr-rd-m col-5-lg mx-a d-f f-c">
+            <Form setError={setError}/>
+            {error && <ErrorMessage error={error} />}
           </div>
         </div>
       </div>
