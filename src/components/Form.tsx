@@ -52,7 +52,7 @@ export default function Form({ setError }: FormProps) {
     try {
       await saveData(data)
       const response = await sendEmail(data)
-      console.log(response)
+      // console.log(response)
       if (!response.success) {
         throw new Error('Form not submitted')
       }
