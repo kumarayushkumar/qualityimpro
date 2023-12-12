@@ -85,7 +85,7 @@ export default function Footer() {
             <div className="pt-m">
               <FontAwesomeIcon className="txt-pri" icon={faEnvelope} />
               <a
-                aria-label="Visit our email page"
+                aria-label="Send us an email on support@qualityimpro.com"
                 className="px-m txt-white"
                 href="mailto:support@qualityimpro.com">
                 support@qualityimpro.com
@@ -133,7 +133,7 @@ export default function Footer() {
             <hr className="line txt-tri" />
             <div className="mt-l">
               <a
-                aria-label="Visit Growigh website"
+                aria-label="This website is developed and maintained by Growigh, visit Growigh website"
                 className="txt-white fs-l"
                 href="https://www.growigh.com"
                 target="_blank"
