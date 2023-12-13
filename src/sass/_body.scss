@@ -2,22 +2,26 @@
   font-family: 'Heading';
   src: url('../assets/fonts/GT-Super-Display-Regular-Trial.otf')
     format('truetype');
+  font-display: swap;
 }
 
 @font-face {
   font-family: 'Body';
   src: url('../assets/fonts/OpenSans-VariableFont_wdth\,wght.ttf')
     format('truetype');
+  font-display: swap;
 }
 
 @font-face {
   font-family: 'Lora';
   src: url('../assets/fonts/Lora-VariableFont_wght.ttf') format('truetype');
+  font-display: swap;
 }
 
 @font-face {
   font-family: 'Marcellus';
   src: url('../assets/fonts/Marcellus-Regular.ttf') format('truetype');
+  font-display: swap;
 }
 
 body {
