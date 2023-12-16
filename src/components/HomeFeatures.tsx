@@ -99,10 +99,9 @@ const HomeFeatures: React.FC<React.HTMLAttributes<HTMLDivElement>> = () => {
           </div>
           <div className="read__more">
             <Link
-              aria-label="Read more about our fetures"
               to="/features"
               onClick={() => window.scrollTo(0, 0)}>
-              Read More
+              Read More Feature
             </Link>
           </div>
         </div>
