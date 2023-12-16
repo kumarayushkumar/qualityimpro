@@ -49,7 +49,9 @@
   font-size: 1.4rem;
 }
 .section {
-  transition: transform 1s, opacity 1s;
+  transition:
+    transform 1s,
+    opacity 1s;
 }
 
 // media query

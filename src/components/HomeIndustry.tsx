@@ -28,7 +28,6 @@ const IndustryData = () => {
 }
 
 export const HomeIndustry = () => {
-  
   return (
     <section className="home__industry section">
       <div className="home__industry--container container">

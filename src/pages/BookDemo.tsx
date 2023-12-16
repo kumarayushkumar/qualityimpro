@@ -22,7 +22,7 @@ export default function BookDemo() {
             </Button>
           </div>
           <div className="form__container mt-xl mt-0-lg col-12-sm bdr-rd-m col-5-lg mx-a d-f f-c">
-            <Form setError={setError}/>
+            <Form setError={setError} />
             {error && <ErrorMessage error={error} />}
           </div>
         </div>
