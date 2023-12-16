@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import Button from './atom/Button'
 
 interface IPricingCard {
@@ -43,7 +44,9 @@ export default function PricingCard({
         </ul>
       </div>
       <div className="pricing__card__button">
-        <Button size="large">Get Started</Button>
+        <Link to="/book-demo" onClick={() => window.scrollTo(0, 0)}>
+          <Button size="large">Get Started</Button>
+        </Link>
       </div>
     </div>
   )
