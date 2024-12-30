@@ -1,5 +1,3 @@
-import { Timestamp } from 'firebase/firestore'
-
 export enum Category {
   Hotel = 'Hotel',
   Hospitality = 'Hospitality',
@@ -16,5 +14,5 @@ export interface IForm {
   company: string
   phone: number
   category: Category
-  created_time: Timestamp
+  created_time: string
 }

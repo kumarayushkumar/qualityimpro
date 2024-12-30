@@ -2,9 +2,7 @@ import { zodResolver } from '@hookform/resolvers/zod'
 import { useForm } from 'react-hook-form'
 import { z } from 'zod'
 // import { DevTool } from '@hookform/devtools'
-import { Timestamp } from 'firebase/firestore'
 
-import { saveData } from '../firebase/firestore'
 import { Category, IForm } from '../interface'
 import sendEmail from '../utils/sendEmail'
 import Button from './atom/Button'
@@ -48,9 +46,8 @@ export default function Form({ setError }: FormProps) {
   } = useForm<IForm>({ resolver: zodResolver(schema) })
 
   const onSubmit = async (data: IForm) => {
-    data.created_time = Timestamp.now()
+    data.created_time = new Date().toISOString()
     try {
-      await saveData(data)
       const response = await sendEmail(data)
       // console.log(response)
       if (!response.success) {
