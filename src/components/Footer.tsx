@@ -43,10 +43,10 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  to="/pricing"
+                  to="/ourclients"
                   className="txt-white"
                   onClick={() => window.scrollTo(0, 0)}>
-                  Pricing
+                  Our clients
                 </Link>
               </li>
               <li>
@@ -73,22 +73,30 @@ export default function Footer() {
             <div>
               <FontAwesomeIcon className="txt-pri" icon={faLocationDot} />
               <p className="px-m d-i">
-                A-56, Rishi nagar, pitampura, Delhi 110034
+               A1 Chattarpur Enclave, New Delhi, India        
               </p>
+              
+            </div>
+             <div>
+              <FontAwesomeIcon className="txt-pri" icon={faLocationDot} />
+              <p className="px-m d-i">
+                  Veliki Poganac 35, 48000, Koprivnica, Croatia             
+                   </p>
+              
             </div>
             <div className="pt-m">
               <FontAwesomeIcon className="txt-pri" icon={faPhone} />
               <a className="px-m txt-white" href="tel:+918318783376">
-                +91 83187 83376
+                +91 7906616181
               </a>
             </div>
             <div className="pt-m">
               <FontAwesomeIcon className="txt-pri" icon={faEnvelope} />
               <a
-                aria-label="Send us an email on support@qualityimpro.com"
+                aria-label="Send us an email on Info@qualityimpro.com"
                 className="px-m txt-white"
-                href="mailto:support@qualityimpro.com">
-                support@qualityimpro.com
+                href="mailto:Info@qualityimpro.com">
+                Info@qualityimpro.com
               </a>
             </div>
             <div className="social__button pt-l">

@@ -30,23 +30,7 @@ export default function About() {
             without the pains typically associated with business expansion.
           </p>
         </div>
-        <div className="about__content--founder">
-          <h1 className="about__heading">Founder & CEO</h1>
-          <div className="founder">
-            <div className="founder__img">
-              <img className="img" src={founder} alt="" />
-            </div>
-            <div className="founder__information d-f f-c">
-              <span className="name">Pawan Prajapati</span>
-              <span className="position">Founder & CEO</span>
-              <span className="position">
-                <a href="mailto:pawan@qualityimpro.com">
-                  pawan@qualityimpro.com
-                </a>
-              </span>
-            </div>
-          </div>
-        </div>
+       
       </div>
     </section>
   )
