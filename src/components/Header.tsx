@@ -54,9 +54,9 @@ export default function Header() {
             <li className="link">
               <NavLink
                 className="nav__link"
-                to="pricing"
+                to="ourclients"
                 onClick={() => window.scrollTo(0, 0)}>
-                Pricing
+                Our clients
               </NavLink>
             </li>
             {/* <li className="link">

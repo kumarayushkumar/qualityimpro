@@ -8,8 +8,8 @@ const IndustryData = () => {
     <div className="home__industry--content d-f f-c">
       <div className="list__container">
         <ListHomePage
-          title="Where Quality, Hygiene, and Efficiency Meet"
-          description="Maintaining top-notch hygiene and service is key for restaurant success. Balancing quality, hygiene, and cost ensures customer satisfaction and profitability"
+          title="Where Quality and Efficiency Meet"
+          description="Maintaining top Notch standards and world class service is key for Success. Balancing quality and cost ensures customer satisfaction and profitability."
           image={restaurant}
           className="industry__list--item"
           first
@@ -17,8 +17,8 @@ const IndustryData = () => {
       </div>
       <div className="list__container">
         <ListHomePage
-          title="Redefining Hospitality in Budget Hotels"
-          description="In budget hotels, cleanliness and courteous staff are crucial. Customers prioritize good service and cleanliness for a positive experience"
+          title="Redefining Hospitality "
+          description="Introduce Luxury into hospitality, with Q&I. Customer prioritize Exceptional service and positive experience, which lingers even after the checkout. "
           image={hotel}
           className="industry__list--item"
         />

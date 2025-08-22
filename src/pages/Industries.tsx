@@ -42,7 +42,7 @@ const IndustryData = () => {
       />
       <ListHomePage
         title="Striking the Perfect Balance in Hotel"
-        description="Indeed, in the budget hotel segment, hygiene and courteous staff play pivotal roles. Customers often prioritize cleanliness and good service even in more affordable accommodations for a positive experience."
+        description="Indeed, in the hotel segment, courteous staff play pivotal roles. Customers often prioritize good service even in more affordable accommodations for a positive experience."
         image={hotel}
         className="industry__list--item"
         first

@@ -6,55 +6,36 @@ export default function Pricing() {
     <section id="pricing" className="pricing__section">
       <div className="pricing container d-f">
         <div className="pricing__heading d-f f-c">
-          <h1>Simple Pricing</h1>
-          <p>No hidden fees. No credit card required. Cancel anytime.</p>
+          <h1>Who do we cater?</h1>
         </div>
         <div className="pricing__cards">
           <PricingCard
-            plan="Free Trial"
-            price="0"
+            plan="Hotel"
             featuresPresent={[
-              'Hygiene and Quality inspection only',
-              'Free listing on Q&I portal'
+              'At Q&I, we help hotels elevate their guest experience through detailed audits, mystery guest visits, and tailored staff training. Our insights highlight strengths and uncover gaps, ensuring consistent service, improved guest satisfaction, and stronger online reputation—all while supporting your team to deliver excellence every day',
             ]}
             featuresNotPresent={[
-              'staff training',
-              'Q&I verified board at your permises',
-              'Cost cutting plan',
-              'One stop solution'
+              
             ]}
-            desc="Experience our free plan and get started with essential services
-    at no cost."></PricingCard>
+            ></PricingCard>
           <PricingCard
-            plan="Standard Plan"
-            price="2000"
+            plan="Restaurant"
             featuresPresent={[
-              'Hygiene and Quality audit with solution',
-              'Free listing on Q&I portal',
-              'Staff Training',
-              'Q&I verified board at your permises'
-            ]}
-            featuresNotPresent={['Cost cutting plan', 'One stop solution']}
-            desc="Upgrade to our standard plan for enhanced features and support."></PricingCard>
-          <PricingCard
-            plan="Premium Plan"
-            price="4000"
-            featuresPresent={[
-              'Hygiene and Quality audit with solution',
-              'Free listing on Q&I portal',
-              'Staff Training',
-              'Q&I verified board at your permises',
-              'Cost cutting plan',
-              'One stop solution'
+              'In luxury dining, every detail matters. At Q&I, we help fine-dining restaurants uphold the highest standards of service, and guest engagement. Through discreet audits, refined service evaluations, and bespoke staff training, we ensure your restaurant delivers flawless experiences that reflect elegance, precision, and world-class hospitality.',
             ]}
             featuresNotPresent={[]}
-            desc="Premium plan offers exclusive benefits and superior features for users."></PricingCard>
+            ></PricingCard>
+          <PricingCard
+            plan="Cafe"
+            featuresPresent={[
+              'Cafés thrive on atmosphere, consistency, and connection. At Q&I, we help cafés refine hygiene practices, service flow, and team training to ensure every guest enjoys not just great coffee, but a welcoming experience they want to return to. Our audits highlight the small details that create big impressions—turning casual visits into loyal relationships.',
+            ]}
+            featuresNotPresent={[]}
+            ></PricingCard>
         </div>
         <div className="pricing__footer">
           <p className="fs-xl">
-            Raising standards, one inspection at a time. Elevate quality in
-            hostels, healthcare, and more with our meticulous inspection
-            services.
+            
           </p>
         </div>
       </div>

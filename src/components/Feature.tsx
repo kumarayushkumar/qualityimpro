@@ -45,20 +45,20 @@ const Feature = ({ children }: IFeature) => {
       <div className="feature__content">
         <div className="feature__list d-f f-c">
           <ListHomePage
-            title="Hygiene and Quality Audit with Solutions"
-            description="Our dedicated inspector ensures top cleanliness and quality through comprehensive, periodic, and unannounced inspections covering personal grooming, premises hygiene, and food handling. Detailed reports will be promptly sent to the organization's owner or manager for thorough oversight."
+            title="Quality Audit with Solutions"
+            description="Our dedicated inspector ensures quality through comprehensive, periodic, and unannounced inspections covering every small detail. Detailed reports will be promptly sent to the organization's owner or manager for thorough oversight."
             image={hygiene}
           />
           <ListHomePage
-            title="Free Listing on Q&I Portal"
-            description="Elevate your brand presence on our website with a dedicated section highlighting quality and hygiene—a crucial consideration for customers who savor dining experiences. This strategic exposure positions your brand as a frontrunner in meeting contemporary expectations, capturing the attention of those who prioritize cleanliness and excellence in their dining choices."
+            title="Listing on Q&I Portal"
+            description="Elevate your brand presence on our website with a dedicated section highlight—a crucial consideration for customers who Savor dining and hotel Experience. This strategic exposure positions your brand as a frontrunner in meeting contemporary expectations, capturing the attention of those who prioritize excellence in their choices."
             image={listing}
             first
           />
 
           <ListHomePage
             title="Staff Training"
-            description="Dedicated team members undergo extensive training led by industry experts, gaining valuable skills in food services, proper food handling, and effective customer engagement. Our program goes beyond standard practices, including specialized modules for upselling strategies, elevating service quality. This holistic approach aims to enhance both service and revenue through effective upselling, positively impacting overall business performance."
+            description="Dedicated team members undergo extensive training led by industry experts, gaining valuable skills in effective customer engagement, emotional intelligence and thinking a step ahead approach. Our program goes beyond standard practices, including specialized modules for upselling strategies, elevating service quality. This holistic approach aims to enhance both service and revenue through effective upselling, positively impacting overall business performance."
             image={staff}
           />
 

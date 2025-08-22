@@ -13,18 +13,18 @@ import { SectionHeader } from './ui/SectionHeader'
 
 const FeatureContent = [
   {
-    heading: 'Hygiene and Quality Audit with Solutions',
+    heading: 'Precision Audits',
     description:
-      'Assure top hygiene and quality through comprehensive, unannounced inspections and reports.'
+      'Audit backed insights assure unannounced inspections to get precise practice followed among the team'
   },
   {
-    heading: 'Free Listing on Q&I Portal',
-    description: 'Position your brand as a dining leader with quality exposure.'
+    heading: 'Listing on Q&I Portal',
+    description: 'Position your brand with industry leaders.'
   },
   {
-    heading: 'Staff Training',
+    heading: 'Operational Excellence training',
     description:
-      'Team excels in food services, customer engagement, and strategic upselling.'
+      'Training platform with World class Exposure and emotional thinking.'
   },
   {
     heading: 'One-Stop Solution',
@@ -35,6 +35,11 @@ const FeatureContent = [
     heading: 'Cost-Cutting Plan',
     description:
       'Maximize efficiency and savings with our tailored cost-cutting plan.'
+  },
+   {
+    heading: 'Milestones programme',
+    description:
+      'Q&I Specialised Programme which makes it easy to achieve Goal by taking small steps.'
   },
   {
     heading: 'Q&I Verified Board at Your Premises',
