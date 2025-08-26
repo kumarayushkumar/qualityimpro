@@ -73,21 +73,24 @@ export default function Footer() {
             <div>
               <FontAwesomeIcon className="txt-pri" icon={faLocationDot} />
               <p className="px-m d-i">
-               A1 Chattarpur Enclave, New Delhi, India        
+               A1 Chattarpur Enclave, New Delhi, India
               </p>
-              
+
             </div>
              <div>
               <FontAwesomeIcon className="txt-pri" icon={faLocationDot} />
               <p className="px-m d-i">
-                  Veliki Poganac 35, 48000, Koprivnica, Croatia             
+                  Veliki Poganac 35, 48000, Koprivnica, Croatia
                    </p>
-              
+
             </div>
             <div className="pt-m">
               <FontAwesomeIcon className="txt-pri" icon={faPhone} />
-              <a className="px-m txt-white" href="tel:+918318783376">
+              <a className="px-m txt-white" href="tel:+917906616181">
                 +91 7906616181
+              </a>
+              <a className="px-m txt-white" href="tel:+917037926385">
+                +91 7037926385
               </a>
             </div>
             <div className="pt-m">

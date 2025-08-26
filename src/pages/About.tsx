@@ -1,4 +1,4 @@
-import founder from '../assets/images/ceo.png'
+// import founder from '../assets/images/ceo.png'
 export default function About() {
   return (
     <section className="about">
@@ -30,7 +30,7 @@ export default function About() {
             without the pains typically associated with business expansion.
           </p>
         </div>
-       
+
       </div>
     </section>
   )
